@@ -1,0 +1,62 @@
+#feedback {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#feedback h3 {
+  font-size: 3rem;
+  margin: 2rem 0 2rem 0;
+  text-align: center;
+  color: var(--secondary-color);
+}
+#feedback .feedbacks {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+#feedback .feedback-item {
+  width: 30rem;
+  height: 13rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 3px solid var(--secondary-color);
+  border-radius: 12px;
+  margin: 2rem;
+  position: relative;
+}
+#feedback .feedback-item img {
+  height: 80%;
+  margin-left: 0.4rem;
+}
+#feedback .feedback-item div {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+#feedback .feedback-item div p{
+  position: relative;
+  max-width: 18rem;
+  left: 0.4rem;
+  top: 0.8rem;
+  font-size: 1.25rem;
+  font-family: var(--secondary-font);
+  font-weight: lighter;
+}
+
+#feedback .feedback-item div h4 {
+  position: absolute;
+  font-size: 1.2rem;
+  font-family: var(--secondary-font);
+  font-weight: light;
+  text-align: end;
+  right: 0.4rem;
+  bottom: 0.4rem;
+}
+#feedback .feedback-button {
+  margin: 3rem 0 3rem 0;
+}

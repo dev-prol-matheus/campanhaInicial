@@ -1,0 +1,32 @@
+#question {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--secondary-color);
+}
+#question h3 {
+  font-size: 3rem;
+  color: #FEFEFE;
+  margin: 2.5rem 0 1rem 0;
+}
+#question .question {
+  width: 50rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  color: #FEFEFE;
+  font-family: var(--secondary-font);
+  margin: 1.5rem;
+}
+#question .question:nth-child(5) {
+  margin-bottom: 4rem;
+}
+#question .question h4 {
+  font-size: 1.3rem;
+}
+#question .question p {
+  font-size: 1.3rem;
+}

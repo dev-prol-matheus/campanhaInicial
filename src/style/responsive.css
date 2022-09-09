@@ -1,0 +1,9 @@
+* {
+  font-size: 80%;
+}
+
+@media (max-width: 410px) {
+  * {
+    font-size: 50%;
+  }
+}

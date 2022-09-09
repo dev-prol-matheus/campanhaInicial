@@ -9,7 +9,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="./style/app.css">
-  <link rel="stylesheet" href=".style/opportunities.css">
+  <link rel="stylesheet" href="./style/nav.css">
+  <link rel="stylesheet" href="./style/header.css">
+  <link rel="stylesheet" href="./style/opportunities.css">
+  <link rel="stylesheet" href="./style/instructions.css">
+  <link rel="stylesheet" href="./style/regions.css">
+  <link rel="stylesheet" href="./style/imagine.css">
+  <link rel="stylesheet" href="./style/economic.css">
+  <link rel="stylesheet" href="./style/offerings.css">
+  <link rel="stylesheet" href="./style/question.css">
+  <link rel="stylesheet" href="./style/feedback.css">
+  <link rel="stylesheet" href="./style/footer.css">
+
+  <link rel="stylesheet" media="(max-width: 800px)" href="./style/responsive.css"/>
 
   <style>
     html {
@@ -29,7 +41,7 @@
       --quaternary-color: #497AC5;
       --quintenary-color: #68ABE5;
 
-      --whatsapp: a4c639;
+      --whatsapp: #03BB85;
 
       --primary-font: Nexa;
       --primary-font-bold: Nexa Bold;
@@ -43,26 +55,32 @@
 </head>
 <body>
   <section id="app">
-    <nav id="nav">
-      <img src="./logos/logo_small.png" alt="logo">
-    </nav>
-
     <header id="header">
-      <div>
-        <h1>Agora é possível que o seu filho estude na melhor escola particular do bairro pela metade do preço.</h1>
-        <button type="reset">Entre em contato para garantir a vaga do seu filho!</button>
-        <p>Preenchendo o formulário, um de nossos consultores entrará em contato com você!</p>
-      </div>
-      <div>
-        <img src="./images/childream.png" alt="childream">
+      <nav id="nav">
+        <img src="./logos/logo_medio.png" alt="logo">
+      </nav>
+      <div class="container-header">
+        <div class="text-header">
+          <h1>Agora é possível que o seu filho estude na melhor escola particular do bairro pela metade do preço.</h1>
+          <button type="reset">Garanta agora sua bolsa pelo whatsapp!</button>
+          <p><i class="fa-brands fa-whatsapp" style="color: var(--whatsapp)"></i> Estamos agora disponíveis para te receber!</p>
+        </div>
+        <div class="wrapper-image">
+          <div class="item-img"></div>
+          <img class="childream-1" src="./images/childream.png" alt="childream">
+          <img class="childream-2" src="./images/childream-2.png" alt="childream-2">
+        </div>
       </div>
     </header>
 
     <div id="opportunities">
 
       <div class="title">
-        <h3>Essa oportunidade
-          é pra quem quer:</h3>
+        <h3>
+          <strong>Essa oportunidade</strong>
+          <br>
+          é pra quem quer:
+        </h3>
       </div>
 
       <div class="area-itens">
@@ -112,7 +130,7 @@
     </div>
 
     <div id="regions">
-      <h3>O Prol Educa tem as melhores escolas parceiras da região</h3>
+      <h3><strong class="regions-strong">O Prol Educa tem as melhores</strong><br>escolas parceiras da região</h3>
       <div class="partners">
         <img src="./partners/colegio_inovacao.png" alt="colegio_inovacao">
         <img src="./partners/cesfa.png" alt="cesfa">
@@ -167,7 +185,7 @@
           <p>Seu filho estudando na melhor escola do bairro e você pagando por isso.</p>  
         </div>
         <div class="imagine-img">
-          <img src="./imagine/school.png" alt="student">
+          <img src="./imagine/student.png" alt="student">
           <p>Seu filho se formando e você com a certeza que a educação foi de qualidade.</p>  
         </div>
         <div class="imagine-img">
@@ -180,64 +198,66 @@
 
     <div id="economic">
       <h3>Mais economia para você</h3>
-      <p>Imagine que você vai matricular o seu filho em uma escola que a mensalidade custa R$ 500,00.</p>
-      <p>Com o Prol Educa essa mensalidade pode chegar a R$ 250,00. O que vai significar uma economia de R$ 2.750,00 no seu bolso. Imagine seu filho com a melhor educação e você poupando dinheiro enquanto garante o futuro dele.</p>
+      <p><strong>Imagine que</strong> você vai matricular o seu filho em uma escola que <strong>a mensalidade custa R$ 500,00.</strong></p>
+      <p><strong>Com o Prol Educa essa mensalidade pode chegar a R$ 250,00.</strong> O que vai significar uma <strong>economia</strong> de R$ 2.750,00 no seu bolso. Imagine seu filho com a <strong>melhor educação</strong> e você poupando dinheiro enquanto garante o <strong>futuro</strong> dele.</p>
       <div class="wrapper-economic">
         <div class="item-economic">
-          <h4>SEM O PROL EDUCA</h4>
-          <p>MENSALIDADES DE R$500,00</p>
+          <h4 class="title-economic">SEM O PROL EDUCA</h4>
+          <p class="text-economic"><strong>MENSALIDADES DE</strong><br>R$500,00</p>
         </div>
         <div class="item-economic">
-          <h4>COM</h4>
+          <h4 class="title-economic">COM</h4>
           <div class="economic-description">
             <img src="./logos/logo_small.png" alt="logo">
-            <h4>MENSALIDADES A PARTIR DE R$250,00</h4>
+            <h4><strong>MENSALIDADES A PARTIR DE</strong><br>R$250,00</h4>
           </div>
         </div>
       </div>
     </div>
 
-    <div id="offerings">
-      <div class="title-offerings">
-        <h2>O Prol Educa</h2>
-        <p>O Prol Educa oferece a vocês pernambucanos e brasileiros a oportunidade de seu filho estudar em uma escola particular com uma bolsa de estudos.</p>
-      </div>
-      <div class="statistics">
-        <div class="item-statistics">
-          <p>+400</p>
-          <h5>INSTITUIÇÕES</h5>
+    <div id="main-offerings">
+      <div id="offerings">
+        <div class="title-offerings">
+          <h2>O Prol Educa</h2>
+          <p>O Prol Educa oferece a vocês pernambucanos e brasileiros a oportunidade de seu filho estudar em uma escola particular com uma bolsa de estudos.</p>
         </div>
-        <div class="item-statistics">
-          <p>+7.000</p>
-          <h5>ALUNOS BENEFICIADOS</h5>
+        <div class="statistics">
+          <div class="item-statistics">
+            <p style="color: #FA8C00">+400</p>
+            <h5>INSTITUIÇÕES</h5>
+          </div>
+          <div class="item-statistics">
+            <p style="color: #43A047;">+7.000</p>
+            <h5>ALUNOS BENEFICIADOS</h5>
+          </div>
+          <div class="item-statistics">
+            <p style="color: #00ACC2;">4058</p>
+            <h5>CURSOS</h5>
+          </div>
+          <div class="item-statistics">
+            <p style="color: #8E24AA;">+12000</p>
+            <h5>VAGAS</h5>
+          </div>
         </div>
-        <div class="item-statistics">
-          <p>4058</p>
-          <h5>CURSOS</h5>
-        </div>
-        <div class="item-statistics">
-          <p>+12000</p>
-          <h5>VAGAS</h5>
-        </div>
-      </div>
-      <div class="simbols">
-        <div class="item-simbols">
-          <img src="./icons/medals.png" alt="medals">
-          <p>ATENDIMENTO DE EXCELÊNCIA</p>
-        </div>
-        <div class="item-simbols">
-          <img src="./icons/hand_facul.png" alt="hand facul">
-          <p>POLÍTICA BOLSA GARANTIDA</p>
-        </div>
-        <div class="item-simbols">
-          <img src="./icons/savings.png" alt="savings">
-          <p>INVESTIDA PELO GOOGLE FOR STARTUPS</p>
+        <div class="simbols">
+          <div class="item-simbols">
+            <img src="./icons/medals.png" alt="medals">
+            <p>ATENDIMENTO DE EXCELÊNCIA</p>
+          </div>
+          <div class="item-simbols">
+            <img src="./icons/hand_facul.png" alt="hand facul">
+            <p>POLÍTICA BOLSA GARANTIDA</p>
+          </div>
+          <div class="item-simbols">
+            <img src="./icons/savings.png" alt="savings">
+            <p>INVESTIDA PELO GOOGLE FOR STARTUPS</p>
+          </div>
         </div>
       </div>
     </div>
 
     <div id="feedback">
-      <h3>O que nossos alunos dizem sobre nós</h3>
+      <h3>O que nossos alunos dizem<br>sobre nós</h3>
       <div class="feedbacks">
         <div class="feedback-item">
           <img src="./feedbacks-image/Naddy.png" alt="Naddy">
@@ -262,7 +282,7 @@
           </div>
         </div>
       </div>
-      <button type="reset">Entre em contato para garantir a vaga do seu filho</button>
+      <button class="feedback-button" type="reset">Entre em contato para garantir a vaga do seu filho</button>
     </div>
 
     <div id="question">
@@ -298,7 +318,7 @@
     </div>
 
     <footer id="footer">
-      <img src="./logos/logo_small.png" alt="LOGO">
+      <img src="./logos/logo_footer.png" alt="LOGO">
     </footer>
   </section>
 </body>
