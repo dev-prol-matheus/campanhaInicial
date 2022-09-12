@@ -41,16 +41,17 @@
 #feedback .feedback-item div p{
   position: relative;
   max-width: 18rem;
+  max-height: 10rem;
   left: 0.4rem;
   top: 0.8rem;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-family: var(--secondary-font);
   font-weight: lighter;
 }
 
 #feedback .feedback-item div h4 {
   position: absolute;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: var(--secondary-font);
   font-weight: light;
   text-align: end;

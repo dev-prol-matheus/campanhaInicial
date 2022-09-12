@@ -6,3 +6,6 @@
   align-items: center;
   justify-content: center;
 }
+#footer img {
+  height: 3rem;
+}

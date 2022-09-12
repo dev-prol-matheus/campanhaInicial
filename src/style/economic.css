@@ -30,6 +30,9 @@
   justify-content: center;
   margin-bottom: 3rem;
 }
+#economic p strong {
+  font-size: 1.6rem;
+}
 #economic .wrapper-economic .item-economic {
   display: flex;
   flex-direction: column;
@@ -56,6 +59,7 @@
   font-family: var(--secondary-font);
   color: var(--secondary-color);
   font-weight: 300;
+  font-size: 1.6rem;
 }
 
 #economic .wrapper-economic .economic-description {
@@ -69,6 +73,9 @@
   border-radius: 18px;
   text-align: center;
   margin-top: 3rem;
+}
+#economic .wrapper-economic .economic-description img {
+  width: 8rem;
 }
 #economic .wrapper-economic .economic-description h4 {
   font-size: 1.6rem;

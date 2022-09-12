@@ -25,8 +25,9 @@
   <link rel="stylesheet" href="./style/question.css">
   <link rel="stylesheet" href="./style/feedback.css">
   <link rel="stylesheet" href="./style/footer.css">
+  <link rel="stylesheet" href="./style/modal.css">
 
-  <link rel="stylesheet" media="(max-width: 800px)" href="./style/responsive.css"/>
+  <link rel="stylesheet" media="(max-width: 1250px)" href="./style/responsive.css"/>
 
   <style>
     html {
@@ -325,7 +326,26 @@
     <footer id="footer">
       <img src="./logos/logo_footer.png" alt="LOGO">
     </footer>
+
+    <div id="modal-container" class="modal-container">
+      <div class="modal">
+        <button id="close-modal-btn" class="close-modal-btn">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="modal-content">
+          <div class="img">
+            <img src="./images/foto-modal-campanha-b2c.png" alt="stundent">
+          </div>
+          <div class="content">
+            <h3>A Prol Educa oferece bolsas com até <strong> 70% </strong>  de desconto!</h3>
+            <button class="button_component"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
   <script src="./scripts/components.js"></script>
+  <script src="./scripts/modal.js"></script>
 </body>
 </html>

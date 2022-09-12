@@ -53,12 +53,12 @@
     display: flex;
     flex-direction: column;
     height: 9rem;
-    width: 20rem;
+    width: 10rem;
     align-items: center;
-    justify-content: center;
     margin: 1rem;
 }
 #offerings .simbols .item-simbols img{
+    width: 50%;
     position: absolute;
     top: 0;
 }

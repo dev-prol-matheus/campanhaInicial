@@ -1,6 +1,5 @@
 #header {
   width: 100%;
-  height: 92vh;
   background-image: url(//d9hhrg4mnvzow.cloudfront.net/basico.proleduca.com.br/c4bbdb3c-vecteezy-crumpled-paper-texture-1227306_11hc0zk00000000000001o.jpg);
   display: flex;
   flex-direction: column;
@@ -14,10 +13,12 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: relative;
   bottom: 0;
+  margin-top: 4rem;
 }
 #header .container-header .text-header {
+  text-align: center;
   width: 32.25rem;
   margin-right: 5rem;
   position: relative;
@@ -42,9 +43,11 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  width: 30rem; /*30rem*/
+  height: 30.0625rem; /*30.0625rem*/
 }
 #header .container-header .wrapper-image img{
-  height: 35rem;
+  height: 110%; /*35rem*/
   position: absolute;
   bottom: 0;
 }
@@ -59,13 +62,13 @@
   background: var(--whatsapp);
   border-style: none;
   border-radius: 158px 158px 0 0;
-  width: 30rem;
-  height: 30.0625rem;
+  width: 30rem; /*30rem*/
+  height: 30.0625rem; /*30.0625rem*/
 }
 
-button #whatsapp-image {
-  color: #000;
-  width: 3.625rem !important;
-  height: 3.625rem !important;
+button #whatsapp-img {
+  width: 3.625rem;
+  height: 3.625rem;
   position: absolute;
+  left: 0;
 }

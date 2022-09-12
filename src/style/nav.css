@@ -5,6 +5,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: relative;
   top: 0;
+}
+
+#header #nav img {
+  height: 6.75rem;
 }
