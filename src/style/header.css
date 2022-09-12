@@ -32,7 +32,7 @@
   font-size: 1.25rem;
   margin-top: 2rem;
 }
-#header .container-header .text-header i{
+#header .container-header .text-header #whatsapp-brands {
   font-size: 1.3rem;
 }
 
@@ -61,4 +61,11 @@
   border-radius: 158px 158px 0 0;
   width: 30rem;
   height: 30.0625rem;
+}
+
+button #whatsapp-image {
+  color: #000;
+  width: 3.625rem !important;
+  height: 3.625rem !important;
+  position: absolute;
 }
