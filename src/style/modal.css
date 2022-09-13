@@ -90,10 +90,9 @@
     top: 0;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background-color:#25d366;
 }
 .modal .modal-content img{
-    width: 75%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     border-top-left-radius: 10px;
@@ -117,7 +116,7 @@
     color: var(--secondary-color);
 }
 .modal .modal-content .content strong{
-    text-shadow: 2px 2px #125f2f;
+    text-shadow: 2px 2px 12px var(--primary-color);
     font-size: 2.5rem;
     color: #16b952;
 }

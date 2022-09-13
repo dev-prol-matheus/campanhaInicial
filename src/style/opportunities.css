@@ -49,6 +49,12 @@
 #opportunities .area-itens .wrapper-item .wrapper-icon img {
   width: 12.5rem;
   height: 12.5rem;
+  color: #FAFAFA;
+}
+#opportunities .area-itens .wrapper-item .wrapper-icon i {
+  font-size: 9rem;
+  color: #FEFEFE;
+  margin-bottom: 1rem;
 }
 
 #opportunities .area-itens p {

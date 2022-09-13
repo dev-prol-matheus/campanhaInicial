@@ -20,6 +20,9 @@
     text-align: center;
     margin-right: 0rem;
   }
+  #header .container-header .text-header p{
+    font-size: 2rem;
+  }
 
   /* AREA O PROL EDUCA */
 
@@ -70,9 +73,50 @@
   button #whatsapp-img {
     width: 7.3rem;
     height: 7.3rem;
+    left: -2px;
+    top: -2px;
   }
   button h5{
     margin-left: 4rem;
     font-size: 1.7rem;
   }
+
+  /* ECONOMIA */
+  #economic p {
+    max-width: 80%;
+  }
+
+  #economic .wrapper-economic .item-economic {
+    height: 14.25rem;
+    width: 28.875rem;
+    margin: 1.5rem 0.5rem 1.5rem 0.5rem;
+  }
+  #economic .wrapper-economic .economic-description {
+    width: 90%;
+    height: 9rem;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  #economic .wrapper-economic .economic-description h4 {
+    font-size: 2.2rem;
+  }
+  #economic .wrapper-economic .economic-description h4 strong {
+    font-size: 1.2rem;
+  }
+
+  /*modal*/
+  .modal{
+    width: 90%;
+    height: 70%;
+  }
+  .modal .modal-content .content h3 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  } 
+  .modal .modal-content .content strong {
+    font-size: 4rem;
+    color: var(--primary-color);
+    text-shadow: 1px 1px 2px var(--primary-color);
+  }
+
 }

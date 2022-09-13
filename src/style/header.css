@@ -29,6 +29,24 @@
   margin-bottom: 2rem;
   color: var(--secondary-color);
 }
+#header .container-header .text-header h1 strong {
+  color: var(--primary-color);
+  text-shadow: 1px 1px 1px var(--primary-color);
+  font-size: 3rem;
+}
+#header .container-header .text-header p strong {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  position: relative;
+  top: -0.55rem;
+}
+#header .container-header .text-header h1 .seven {
+  font-size: 8rem;
+  color: var(--primary-color);
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px var(--primary-color);
+}
+
 #header .container-header .text-header p{
   font-size: 1.25rem;
   margin-top: 2rem;
@@ -70,5 +88,6 @@ button #whatsapp-img {
   width: 3.625rem;
   height: 3.625rem;
   position: absolute;
-  left: 0;
+  left: -0px;
+  top: -0px;
 }
