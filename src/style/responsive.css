@@ -35,21 +35,6 @@
     margin: 0.5rem;
   }
 
-  /* AREA QUESTIONS */
-
-  #question .question {
-    width: 40rem;
-  }
-  #question .question:nth-child(5) {
-    margin-bottom: 3rem;
-  }
-  #question .question h4 {
-    font-size: 1rem;
-  }
-  #question .question p {
-    font-size: 1rem;
-  }
-
   /* BOTÃO PARA IR PARA O WHATSAPP */
 
   #header .container-header{
@@ -81,9 +66,9 @@
     font-size: 1.7rem;
   }
 
-  /* ECONOMIA */
+  /* economy */
   #economic p {
-    max-width: 80%;
+    max-width: 85%;
   }
 
   #economic .wrapper-economic .item-economic {
@@ -98,16 +83,17 @@
     margin-top: 3rem;
   }
   #economic .wrapper-economic .economic-description h4 {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
   #economic .wrapper-economic .economic-description h4 strong {
     font-size: 1.2rem;
   }
 
-  /*modal*/
+  /* modal */
   .modal{
     width: 90%;
     height: 70%;
+    min-height: 54rem;
   }
   .modal .modal-content .content h3 {
     font-size: 2.5rem;
@@ -117,6 +103,97 @@
     font-size: 4rem;
     color: var(--primary-color);
     text-shadow: 1px 1px 2px var(--primary-color);
+  }
+
+  /* Offerings */
+
+  #offerings {
+    width: 90%;
+  }
+  #offerings .title-offerings h2{
+    font-size: 3rem;
+    margin: 1rem 0 3rem 0;
+  }
+  #offerings .title-offerings p{
+    font-size: 2rem;
+  }
+  #offerings .statistics{
+    width: 100%;
+  }
+  #offerings .statistics .item-statistics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+  }
+  #offerings .statistics .item-statistics p{
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+  #offerings .statistics .item-statistics h5{
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  /* feedbacks */
+  #feedback .feedbacks {
+    width: 90%;
+  }
+  #feedback .feedback-item {
+    width: 37rem;
+    height: 16rem;
+  }
+  #feedback .feedback-item div p{
+    max-width: 22rem;
+    left: 0.8rem;
+    top: 2rem;
+  }
+
+  /* Imagine */
+  #imagine .imagine-img p{
+    font-size: 1.6rem;
+    font-weight: bolder;
+    max-width: 35rem;
+  }
+
+  /* questions */
+  #question{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #question .question {
+    width: 43rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: start;
+    color: #FEFEFE;
+    font-family: var(--secondary-font);
+    margin: 1.5rem;
+  }
+  #question h3 {
+    font-size: 3rem;
+    color: #FEFEFE;
+    margin: 2.5rem 0 1rem 0;
+  }
+  #question .question i{
+    font-size: 4rem;
+    margin-right: 0.9rem;
+    color: var(--quaternary-color);
+  }
+  #question .question:nth-child(5) {
+    margin-bottom: 5rem;
+  }
+  #question .question h4 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  #question .question p {
+    font-size: 1.7rem;
+    text-align: justify;
   }
 
 }

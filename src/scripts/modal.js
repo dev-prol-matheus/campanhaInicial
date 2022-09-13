@@ -4,7 +4,7 @@ const closeModalBtn = document.getElementById("close-modal-btn");
 
 setTimeout(function(){
     modalContainer.classList.add("show-modal");
-}, 1000);
+}, 20000);
 
 closeModalBtn.addEventListener("click", () => {
     modalContainer.classList.remove("show-modal");

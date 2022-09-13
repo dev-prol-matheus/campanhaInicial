@@ -109,14 +109,24 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
+.modal .modal-content .content .content_modal {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: conver;
+    opacity: 0.2;
+}
+
 .modal .modal-content .content h3{
     font-size: 1.6rem;
     margin: 0 0 1rem 0;
     color: var(--secondary-color);
+    z-index: 2;
 }
 .modal .modal-content .content strong{
-    text-shadow: 2px 2px 12px var(--primary-color);
+    text-shadow: 1px 1px 2px var(--primary-color);
     font-size: 2.5rem;
-    color: #16b952;
+    color: var(--primary-color);
 }

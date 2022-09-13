@@ -15,12 +15,16 @@
 #economic p {
   color: var(--secondary-color); 
   margin: 0.5rem;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   max-width: 50rem;
   text-align: center;
+  font-weight: bolder;
 }
 #economic strong {
-  color: var(--tertiary-color);
+  color: var(--primary-color);
+  font-size: 1.7rem !important;
+  font-weight: 500 !important;
+  font-weight: bolder !important;
 }
 #economic .wrapper-economic {
   display: flex;
@@ -32,6 +36,7 @@
 }
 #economic p strong {
   font-size: 1.6rem;
+  font-weight: bolder;
 }
 #economic .wrapper-economic .item-economic {
   display: flex;
@@ -56,9 +61,7 @@
   font-size: 1.6rem;
 }
 #economic .wrapper-economic .item-economic strong {
-  font-family: var(--secondary-font);
   color: var(--secondary-color);
-  font-weight: 300;
   font-size: 1.6rem;
 }
 
@@ -68,11 +71,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   background: #FEFEFE;
   border-radius: 18px;
   text-align: center;
-  margin-top: 3rem;
 }
 #economic .wrapper-economic .economic-description img {
   width: 8rem;

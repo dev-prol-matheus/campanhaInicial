@@ -41,3 +41,7 @@ button #whatsapp-img {
   width: 4.625rem;
   height: 4.625rem;
 }
+button a{
+  text-decoration: none;
+  color: #FEFEFE;
+}

@@ -52,6 +52,10 @@
     padding: 0;
     width: 14.75rem;
     height: 30.6875;
+    border-radius: 10px;
+    background-image: url("https://www.qiscus.com/wp-content/uploads/2021/04/Appoinment_Update-3.jpg");
+    background-size: cover;
+    background-position: center;
 }
 .instructions-content h5{
     margin: 0;
