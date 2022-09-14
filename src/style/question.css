@@ -21,6 +21,11 @@
   font-family: var(--secondary-font);
   margin: 1.5rem;
 }
+#question .question i{
+  font-size: 4rem;
+  margin-right: 0.9rem;
+  color: var(--quaternary-color);
+}
 #question .question:nth-child(5) {
   margin-bottom: 4rem;
 }
