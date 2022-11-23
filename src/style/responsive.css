@@ -195,4 +195,13 @@
   * {
     font-size: 35%;
   }
+  #question .question {
+    width: 80%;
+  }
+  #question .question p .anchorP {
+    font-size: 2rem;
+  }
+  #question .visitWebsiteButton {
+    font-size: 6rem;
+  }
 }
