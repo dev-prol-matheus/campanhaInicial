@@ -33,6 +33,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="./style/app.css">
+  <link rel="stylesheet" type="text/css" href="./style/cookiesPolicy.css">
   <link rel="stylesheet" type="text/css" href="./style/nav.css">
   <link rel="stylesheet" type="text/css" href="./style/header.css">
   <link rel="stylesheet" type="text/css" href="./style/opportunities.css">
@@ -381,8 +382,23 @@
       <img src="./logos/logo_footer.png" alt="LOGO">
     </footer>
 
+    <!-- Cookies Policy -->
+    <section id="cookies">
+      <header class="cookiesHeader">
+        <i class="fa-solid fa-cookie-bite"></i>
+        <p>Este site usa Cookies</p>
+      </header>
+      <article class="cookiesDescription">
+        <p>Nós armazenamos dados temporariomante para melhorar a sua experiência de navegação e recomendar conteúdo de seu interesse. Ao utilizar nosso serviços, você concorda com tal monitoramento. Para mais informações, consulte a nossa <strong>Política de Cookies</strong>.</p>
+      </article>
+      <footer class="footer">
+        <button class="cookieBtn decline" id="closeCookiesWindow" type="button">Negar</button>
+        <button class="cookieBtn accept" id="AcceptCookies" type="button">Aceitar</button>
+      </footer>
+    </section>
+
     <!-- Modal Window -->
-    <div id="modal-container" class="modal-container">
+    <div id="modal-container" class="modal-container" style="display: none;">
       <div class="modal">
         <button id="close-modal-btn" class="close-modal-btn">
           <i class="fa-solid fa-xmark"></i>
