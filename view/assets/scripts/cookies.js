@@ -11,25 +11,35 @@ const closeCookiesWindow = () => {
   cookies.classList.add("hidden"); 
 };
 
+// SetCookies
 const setCookies = () => {
-  // document.cookie = "cookie=accept";
-  localStorage.setItem("cookie",true)
+  document.cookie = "cookie=accept";
   closeCookiesWindow();
 };
 const declineCookies = () => {
-  // document.cookie = "cookie=decline";
-localStorage.setItem("cookie",false)
+  document.cookie = "cookie=decline";
   closeCookiesWindow();
 };
 
-document.addEventListener("DOMContentLoaded", () => {
-  // const verifyCookie = document.cookie("PHPSESSID");
-  const verifyCookie = localStorage.getItem("cookie");
+// Verificar se existem cookies;
+function getCookie(name) {
+  let cookie = {};
+  
+  document.cookie.split(';').forEach(function(el) {
+    let [k,v] = el.split('=');
+    cookie[k.trim()] = v;
+  })
+  
+  return cookie[name];
+}
+const cookie = getCookie("cookie");
 
+document.addEventListener("DOMContentLoaded", () => {
   acceptCookies.addEventListener("click", setCookies);
   closeCookies.addEventListener("click", declineCookies);
 
-  if(verifyCookie == null){
+  if(cookie == null || cookie == undefined){
     showCookiesWindow();
   };
+
 });
