@@ -24,7 +24,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Campanha - B2C</title>
+  <title>Bolsas de Estudo de até 70% - 30.000 Vagas</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,19 +32,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="./style/app.css">
-  <link rel="stylesheet" href="./style/nav.css">
-  <link rel="stylesheet" href="./style/header.css">
-  <link rel="stylesheet" href="./style/opportunities.css">
-  <link rel="stylesheet" href="./style/instructions.css">
-  <link rel="stylesheet" href="./style/regions.css">
-  <link rel="stylesheet" href="./style/imagine.css">
-  <link rel="stylesheet" href="./style/economic.css">
-  <link rel="stylesheet" href="./style/offerings.css">
-  <link rel="stylesheet" href="./style/question.css">
-  <link rel="stylesheet" href="./style/feedback.css">
-  <link rel="stylesheet" href="./style/footer.css">
-  <link rel="stylesheet" href="./style/modal.css">
+  <link rel="stylesheet" type="text/css" href="./style/app.css">
+  <link rel="stylesheet" type="text/css" href="./style/nav.css">
+  <link rel="stylesheet" type="text/css" href="./style/header.css">
+  <link rel="stylesheet" type="text/css" href="./style/opportunities.css">
+  <link rel="stylesheet" type="text/css" href="./style/instructions.css">
+  <link rel="stylesheet" type="text/css" href="./style/regions.css">
+  <link rel="stylesheet" type="text/css" href="./style/imagine.css">
+  <link rel="stylesheet" type="text/css" href="./style/economic.css">
+  <link rel="stylesheet" type="text/css" href="./style/offerings.css">
+  <link rel="stylesheet" type="text/css" href="./style/question.css">
+  <link rel="stylesheet" type="text/css" href="./style/feedback.css">
+  <link rel="stylesheet" type="text/css" href="./style/footer.css">
+  <link rel="stylesheet" type="text/css" href="./style/modal.css">
 
   <link rel="stylesheet" media="(max-width: 1250px)" href="./style/responsive.css"/>
 
@@ -365,15 +365,23 @@
         <i class="fa-solid fa-circle-question"></i>
         <div>
           <h4>COMO POSSO ME INSCREVER?</h4>
-          <p>Entrando no nosso site que é o <a href="www.proleduca.com.br" style="text-decoration: none; color: #FEFEFE; font-weight: bolder;">www.proleduca.com.br</a>, você consegue fazer a inscrição e efetuar o pagamento da matrícula (taxa de adesão), de forma rápida e prática.</p>
+          <p>Entrando no nosso site que é o <a href="www.proleduca.com.br" class="anchorP">www.proleduca.com.br</a>, você consegue fazer a inscrição e efetuar o pagamento da matrícula (taxa de adesão), de forma rápida e prática.</p>
         </div>
       </div>
+
+      <article class="visitWebsite">
+        <button class="visitWebsiteButton" type="button">
+          <a href="https://proleduca.com.br" target="_blank">Visite o Prol Educa</a>
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </button>
+      </article>
     </div>
 
     <footer id="footer">
       <img src="./logos/logo_footer.png" alt="LOGO">
     </footer>
 
+    <!-- Modal Window -->
     <div id="modal-container" class="modal-container">
       <div class="modal">
         <button id="close-modal-btn" class="close-modal-btn">
@@ -393,7 +401,10 @@
     </div>
 
   </section>
+
+  <!-- Scripts -->
   <script src="./scripts/components.js"></script>
   <script src="./scripts/modal.js"></script>
+
 </body>
 </html>
