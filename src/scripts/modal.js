@@ -1,4 +1,4 @@
-console.log("Hello World!");
+// console.log("Hello World!");
 const modalContainer = document.getElementById("modal-container");
 const closeModalBtn = document.getElementById("close-modal-btn");
 
