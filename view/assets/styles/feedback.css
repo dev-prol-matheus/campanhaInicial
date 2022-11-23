@@ -27,19 +27,19 @@
   border-radius: 12px;
   margin: 2rem;
   position: relative;
-  box-shadow: 0px 1px 12px #01010144;
+  box-shadow: 0px 1px 18px #01010125;
 }
 #feedback .feedback-item img {
   height: 80%;
   margin-left: 0.4rem;
   border-radius: 20%;
 }
-#feedback .feedback-item div {
+#feedback .feedback-item figcaption {
   position: relative;
   height: 100%;
   width: 100%;
 }
-#feedback .feedback-item div p{
+#feedback .feedback-item figcaption p{
   position: relative;
   max-width: 22rem;
   max-height: 10rem;
@@ -51,7 +51,7 @@
   font-weight: lighter;
 }
 
-#feedback .feedback-item div h4 {
+#feedback .feedback-item figcaption h4 {
   position: absolute;
   font-size: 1.1rem;
   font-family: var(--secondary-font);
