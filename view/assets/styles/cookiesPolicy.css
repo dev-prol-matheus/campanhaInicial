@@ -1,15 +1,17 @@
 #cookies {
   position: fixed;
   bottom: -30rem;
-  width: 100%;
-  margin: 0;
+  width: 50%;
+  margin: 1rem;
   padding: 1rem 0;
-  background-color: #fffffff9;
-  box-shadow: 0 0 18px rgba(0,0,0,.230);
+  background-color: var(--tertiary-color);
+  box-shadow: 0 0 15px rgba(0,0,0,.400);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: none;
+  border-radius: 10px;
 }
 .cookies.show {
   animation: showCookiesPolicy 1s forwards;
@@ -43,8 +45,39 @@
   font-size: 1.3rem;
   margin-right: 0.3rem;
 }
+#cookies .cookiesContent {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#cookies .cookiesContent p {
+  color: white;
+}
+#cookies .cookiesContent p strong {
+  transition: .2s;
+}
+#cookies .cookiesContent p strong:hover {
+  cursor: pointer;
+  color: var(--quintenary-color);
+}
+#cookies .cookiesContent button {
+  width: 15rem;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  color: var(--quintenary-color);
+  background-color: transparent;
+}
+#cookies .cookiesContent i {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-right: 0.6rem;
+}
 
-#cookies .cookiesDescription {
+/* #cookies .cookiesDescription {
   width: 90%;
 }
 #cookies .cookiesDescription p {
@@ -93,4 +126,4 @@
 }
 #cookies .footer .cookieBtn.accept:hover {
   background-color: #1b4584;
-}
+} */
