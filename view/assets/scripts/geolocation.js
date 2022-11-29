@@ -62,3 +62,70 @@ function setPathSession(GEO_SUCCESS_PATH) {
     `;
   })
 }
+
+new PerformanceObserver((entryList) => {
+  for (const entry of entryList.getEntries()) {
+    console.log('LCP candidate:', entry.startTime, entry);
+  }
+}).observe({type: 'largest-contentful-paint', buffered: true});
+
+new PerformanceObserver((entryList) => {
+  for (const entry of entryList.getEntriesByName('first-contentful-paint')) {
+    console.log('FCP candidate:', entry.startTime, entry);
+  }
+}).observe({type: 'paint', buffered: true});
+
+let clsValue = 0;
+let clsEntries = [];
+
+let sessionValue = 0;
+let sessionEntries = [];
+
+new PerformanceObserver((entryList) => {
+  for (const entry of entryList.getEntries()) {
+    // Only count layout shifts without recent user input.
+    if (!entry.hadRecentInput) {
+      const firstSessionEntry = sessionEntries[0];
+      const lastSessionEntry = sessionEntries[sessionEntries.length - 1];
+
+      // If the entry occurred less than 1 second after the previous entry and
+      // less than 5 seconds after the first entry in the session, include the
+      // entry in the current session. Otherwise, start a new session.
+      if (sessionValue &&
+          entry.startTime - lastSessionEntry.startTime < 1000 &&
+          entry.startTime - firstSessionEntry.startTime < 5000) {
+        sessionValue += entry.value;
+        sessionEntries.push(entry);
+      } else {
+        sessionValue = entry.value;
+        sessionEntries = [entry];
+      }
+
+      // If the current session value is larger than the current CLS value,
+      // update CLS and the entries contributing to it.
+      if (sessionValue > clsValue) {
+        clsValue = sessionValue;
+        clsEntries = sessionEntries;
+
+        // Log the updated value (and its entries) to the console.
+        console.log('CLS:', clsValue, clsEntries)
+      }
+    }
+  }
+}).observe({type: 'layout-shift', buffered: true});
+
+new PerformanceObserver((entryList) => {
+  const [pageNav] = entryList.getEntriesByType('navigation');
+
+  console.log(`TTFB: ${pageNav.responseStart}`);
+}).observe({
+  type: 'navigation',
+  buffered: true
+});
+
+new PerformanceObserver((entryList) => {
+  for (const entry of entryList.getEntries()) {
+    const delay = entry.processingStart - entry.startTime;
+    console.log('FID candidate:', delay, entry);
+  }
+}).observe({type: 'first-input', buffered: true});
