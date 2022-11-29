@@ -2,7 +2,7 @@ let GEO_SUCCESS, GEO_ERROR = true;
 let DATA, GLOBAL_KEY = '';
 const SESSION_REGION = document.getElementById('regions');
 
-axios.get('http://localhost:3001/')
+axios.get('https://172.106.0.125:3001') //localhost: 127.0.0.1:3001 | hostoo: https://172.106.0.125:3001
   .then(response => DATA = response.data)
   .catch(error => {
     message: 'error',

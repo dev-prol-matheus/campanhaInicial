@@ -43,9 +43,9 @@ async function printFiles() {
   http.createServer(function(request, response) {
     response.writeHead(200, {'Content-Type': 'text/plain', "Access-Control-Allow-Origin": "*", "Access-Control-Allow-Methods": 'GET,PUT,POST,DELETE'});
     response.end(JSON.stringify(arrayPrimary));
-  }).listen(3001, '127.0.0.1');
+  }).listen(3001, '172.106.0.125'); //localhost: 127.0.0.1 | hostoo: 172.106.0.125
   
-  console.log('\n\nServidor executando em http://127.0.0.1:3001/');
+  // console.log('\n\nServidor executando em http://127.0.0.1:3001/');
 }
 
 printFiles();
