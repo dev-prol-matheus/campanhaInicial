@@ -27,7 +27,6 @@
   /* AREA O PROL EDUCA */
 
   /* OPORTUNIDADES */
-
   #opportunities .area-itens {
     width: 100%;
   }
@@ -36,7 +35,6 @@
   }
 
   /* BOTÃO PARA IR PARA O WHATSAPP */
-
   #header .container-header{
     width: 90%;
   }
@@ -143,7 +141,7 @@
     width: 70%;
   }
   #feedback .feedbackBox .studentImage {
-    width: 70%;
+    width: 45%;
     margin: 1rem 0;
   }
   #feedback .feedbackBox .studentImage img {
@@ -153,10 +151,11 @@
     width: 100%;
   }
   #feedback .feedbackBox .coment p {
-    font-size: 1.8rem;
+    text-align: justify;
+    font-size: 2.1rem;
   }
   #feedback .feedbackBox .coment h4 {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
   }
 
   /* Imagine */
@@ -229,7 +228,7 @@
     margin: 1.5rem 0;
   }
 }
-@media only screen and (max-width: 330px) { 
+@media only screen and (max-width: 350px) { 
   * {
     font-size: 40%;
   }
@@ -254,17 +253,30 @@
     max-width: 40rem;
   }
 
-  #feedback .feedback-item {
-    width: 42rem;
-    height: 20rem;
+
+  #economic h3 {
+    font-size: 3.5rem;
+    margin: 2.8rem 0;
   }
-  #feedback .feedback-item img {
-    height: 80%;
-    width: 80%;
+  #economic p {
+    font-size: 2.5rem;
   }
-  #feedback .feedback-item figcaption p {
-    font-size: 1.8rem;
-    max-width: 30rem;
-    max-width: 40rem;
+  #economic p strong {
+    font-size: 2.7rem !important;
+  }
+
+
+  #offerings .title-offerings p {
+    font-size: 2.7rem;
+    width: 91%;
+  }
+  #offerings .statistics {
+    flex-direction: column;
+  }
+  #offerings .statistics .item-statistics p {
+    font-size: 5rem;
+  }
+  #offerings .statistics .item-statistics h5 {
+    font-size: 2rem;
   }
 }

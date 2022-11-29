@@ -51,8 +51,10 @@
   justify-content: center;
 }
 #question .visitWebsiteButton {
-  font-size: 1.4rem;
   background-color: var(--primary-color);
+}
+#question .visitWebsiteButton a {
+  font-size: 1.5rem;
 }
 #question .visitWebsiteButton:hover {
   font-size: 1.3rem;

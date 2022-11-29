@@ -1,7 +1,7 @@
 #cookies {
   position: fixed;
   left: 0;
-  bottom: -30rem;
+  bottom: -40rem;
   width: 50%;
   margin: 1rem;
   padding: 1rem 0;
@@ -17,12 +17,12 @@
 .cookies.show {animation: showCookiesPolicy 1s forwards;}
 .cookies.hidden {animation: closeCookiesPolicy 1s forwards;}
 @keyframes showCookiesPolicy {
-  0% { bottom: -30rem; }
+  0% { bottom: -40rem; }
   100% { bottom: 0; }
 }
 @keyframes closeCookiesPolicy {
   0% { bottom: 0; }
-  100% { bottom: -30rem; }
+  100% { bottom: -40rem; }
 }
 #cookies .cookiesContent {
   width: 90%;
