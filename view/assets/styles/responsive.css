@@ -190,6 +190,35 @@
     font-size: 1.7rem;
     text-align: justify;
   }
+
+  /* cookiesPolicy */
+  #cookies {
+    width: 100%;
+    margin: 0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 1.8rem 0;
+    background-color: #2a59a0f3;
+  }
+  #cookies .cookiesContent {
+    flex-direction: column;
+  }
+  #cookies .cookiesContent i {
+    display: none;
+  }
+  #cookies .cookiesContent p {
+    width: 80%;
+    font-size: 1.8rem;
+  }
+  #cookies .cookiesContent p strong {
+    font-size: 1.8rem;
+  }
+  #cookies .cookiesContent button {
+    font-size: 2rem;
+    margin: 1.5rem 0;
+  }
 }
 @media only screen and (max-width: 330px) { 
   * {

@@ -14,12 +14,8 @@
   border: none;
   border-radius: 10px;
 }
-.cookies.show {
-  animation: showCookiesPolicy 1s forwards;
-}
-.cookies.hidden {
-  animation: closeCookiesPolicy 1s forwards;
-}
+.cookies.show {animation: showCookiesPolicy 1s forwards;}
+.cookies.hidden {animation: closeCookiesPolicy 1s forwards;}
 @keyframes showCookiesPolicy {
   0% { bottom: -30rem; }
   100% { bottom: 0; }
@@ -28,24 +24,6 @@
   0% { bottom: 0; }
   100% { bottom: -30rem; }
 }
-#cookies .cookiesHeader {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  margin-bottom: .4rem;
-  padding: 0;
-  width: 90%;
-}
-#cookies .cookiesHeader p {
-  font-size: 1rem;
-  font-weight: bold;
-  color: #3a3a3a;
-}
-#cookies .cookiesHeader i {
-  font-size: 1.3rem;
-  margin-right: 0.3rem;
-}
 #cookies .cookiesContent {
   width: 90%;
   display: flex;
@@ -53,10 +31,16 @@
   justify-content: center;
   align-items: center;
 }
+#cookies .cookiesContent i {
+  font: 1.8rem;
+  color: #ffffff;
+}
 #cookies .cookiesContent p {
   color: white;
+  font-size: 1rem;
 }
 #cookies .cookiesContent p strong {
+  font-size: 1rem;
   transition: .2s;
 }
 #cookies .cookiesContent p strong:hover {

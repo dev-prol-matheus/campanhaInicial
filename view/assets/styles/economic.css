@@ -4,7 +4,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(//d9hhrg4mnvzow.cloudfront.net/basico.proleduca.com.br/c4bbdb3c-vecteezy-crumpled-paper-texture-1227306_11hc0zk00000000000001o.jpg);
 }
 #economic h3 {
   font-size: 3rem;
@@ -50,6 +49,7 @@
   margin: 2.5rem;
   position: relative;
   color: #FEFEFE;
+  box-shadow: 0 0 15px rgba(0,0,0,.300);
 }
 #economic .wrapper-economic .item-economic .title-economic {
   position: absolute;
