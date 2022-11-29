@@ -36,6 +36,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
+  <!-- CSS Links -->
   <link rel="stylesheet" type="text/css" href="./view/assets/styles/app.css">
   <link rel="stylesheet" type="text/css" href="./view/assets/styles/cookiesPolicy.css">
   <link rel="stylesheet" type="text/css" href="./view/assets/styles/nav.css">
@@ -53,13 +54,10 @@
 
   <link rel="stylesheet" media="(max-width: 1250px)" href="./view/assets/styles/responsive.css"/>
 
+  <!-- Main Style -->
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    :target {
-      scroll-margin-top: 4.6rem;
-    }
+    html {scroll-behavior: smooth;}
+    :target {scroll-margin-top: 4.6rem;}
     @font-face {
       font-family: 'Nexa';
       src: url('../assets/fonts/Nexa Bold.otf') format('opentype'), url('./fonts/Nexa Light.otf') format('opentype');
@@ -70,16 +68,12 @@
       --tertiary-color: #2A5AA0;
       --quaternary-color: #497AC5;
       --quintenary-color: #68ABE5;
-
       --whatsapp: #4ecb5c;
-
       --primary-font: Nexa;
       --primary-font-bold: Nexa Bold;
       --secondary-font: 'Open Sans', sans-serif;
     }
-    body {
-      overflow-x: hidden !important;
-    } 
+    body {overflow-x: hidden !important;} 
   </style>
 
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbYARJZIokGAt0KS7LheI-V5RwqGlwTB8"></script>
@@ -87,18 +81,25 @@
   
 </head>
   
-<body>
-  <!-- Além disso, cole esse código imediatamente após a tag de abertura <body>: -->
-  
+<body>  
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N48TMQS"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N48TMQS"
+            height="0"
+            width="0"
+            style="display:none;visibility:hidden;"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <main id="app">
-    <header id="header">
+
+
+    <!-- Header -->
+    <header id="header" style="background-image: url('./view/assets/image/background/background-header.jpg');">
       <nav id="nav">
-        <img src="./view/assets/image/logos/logo_medio.png" alt="logo">
+        <a href="https://proleduca.com.br" target="_blank">
+          <img src="./view/assets/image/logos/logo_medio.png" alt="Logo Prol Educa" title="Prol Educa - Soluções Educacionais">
+        </a>
       </nav>
       <article class="container-header">
         <aside class="text-header">
@@ -107,20 +108,21 @@
           <p><strong>*</strong> Estamos disponíveis para te atender!</p>
         </aside>
         <figure class="wrapper-image">
-          <div class="item-img"></div>
-          <img class="childream-1" src="./view/assets/image/images/childream.png" alt="childream">
-          <img class="childream-2" src="./view/assets/image/images/childream-2.png" alt="childream-2">
+          <span class="item-img"></span>
+          <img class="childream-1" src="./view/assets/image/images/childream.webp" alt="estudante_1">
+          <img class="childream-2" src="./view/assets/image/images/childream-2.webp" alt="estudante_2">
         </figure>
       </article>
     </header>
 
+
+    <!-- Opportunities -->
     <session id="opportunities">
       <header class="title">
         <h3><strong>Essa oportunidade</strong><br>é pra quem quer:</h3>
       </header>
 
       <article class="area-itens">
-
         <figure class="wrapper-item">
           <div class="wrapper-icon">
             <i class="fa-solid fa-hand-holding-dollar"></i>
@@ -162,33 +164,37 @@
           </div>
           <figcaption>Investir nos sonhos dos seus filhos(a).</figcaption>
         </figure>
-
       </article>
     </session>
 
-    <session id="regions">
-    </session>
 
+    <!-- Schools -->
+    <session id="regions"></session>
+
+
+    <!-- Imagine -->
     <session id="imagine">
       <h3>Imagine só...</h3>
       <article class="wrapper-imagine">
         <figure class="imagine-img">
-          <img src="./view/assets/image/imagine/childreams.png" alt="childreams">
+          <img src="./view/assets/image/imagine/childreams.webp" alt="Criança estudando" title="Criança estudando">
           <figcaption>Seu filho estudando na melhor escola do bairro a um preço acessível.</figcaption>  
         </figure>
         <figure class="imagine-img">
-          <img src="./view/assets/image/imagine/student.png" alt="student">
+          <img src="./view/assets/image/imagine/student.webp" alt="Estudante se formando" title="Estudante se formando">
           <figcaption>Seu filho se formando e você com a certeza que a educação foi de qualidade.</figcaption>  
         </figure>
         <figure class="imagine-img">
-          <img src="./view/assets/image/imagine/school.png" alt="school">
+          <img src="./view/assets/image/imagine/school.webp" alt="Universidade Federal" title="Universidade Federal">
           <figcaption>Seu filho entrando em uma universidade federal porque teve uma educação que o deixou preparado.</figcaption>  
         </figure>
       </article>
       <button class="button_component" type="reset">Entre em contato para garantir a vaga do seu filho</button>
     </session>
 
-    <session id="economic">
+
+    <!-- Economy -->
+    <session id="economic" style="background-image: url('./view/assets/image/background/background-header.jpg');">
       <h3>Mais economia para você</h3>
       <p>Imagine que você vai matricular o seu filho em uma escola que a mensalidade custa <strong>R$ 500,00.</strong></p>
       <p>Com o Prol Educa essa mensalidade pode chegar a <strong>R$ 250,00.<br><br></strong> O que vai significar uma economia de <strong>R$ 2.750,00</strong> no seu bolso.<br><br> Imagine seu filho com a melhor educação e você poupando dinheiro enquanto garante o futuro dele.</p>
@@ -196,19 +202,21 @@
         <session class="item-economic">
           <h4 class="title-economic">SEM O PROL EDUCA</h4>
           <article class="economic-description">
-            <h4 class="text-economic"><strong>MENSALIDADES DE</strong><br> <strong style="color: #AA0000">R$ 500,00</strong></h4>
+            <h4 class="text-economic"><strong>MENSALIDADES DE</strong><br> <strong style="color: #AA0000;">R$ 500,00</strong></h4>
           </article>
         </session>
         <session class="item-economic">
           <h4 class="title-economic">COM</h4>
           <figure class="economic-description">
-            <img src="./view/assets/image/logos/logo_small.png" alt="logo">
+            <img src="./view/assets/image/logos/logo_small.png" alt="Logo Prol Educa" title="Prol Educa">
             <h4><strong>MENSALIDADES A PARTIR DE</strong><br>R$ 250,00</h4>
           </figure>
         </session>
       </article>
     </session>
 
+
+    <!-- Offerings -->
     <session id="main-offerings">
       <article id="offerings">
         <header class="title-offerings">
@@ -217,7 +225,7 @@
         </header>
         <article class="statistics">
           <aside class="item-statistics">
-            <p style="color: #FA8C00">+400</p>
+            <p style="color: #FA8C00;">+400</p>
             <h5>INSTITUIÇÕES</h5>
           </aside>
           <aside class="item-statistics">
@@ -236,33 +244,37 @@
 
         <h3 class="title-logos">Quem acredita</h3>
         <figure class="investidores">
-          <img src="./view/assets/image/logos/Google_for_Startups_logo.svg" alt="Google For STARTUPS">
-          <img src="./view/assets/image/logos/Artemisia.svg" alt="Facebook">
+          <img src="./view/assets/image/logos/Google_for_Startups_logo.svg" alt="Google For STARTUPS" title="Google For Startups">
+          <img src="./view/assets/image/logos/Artemisia.svg" alt="Facebook" title="Facebook">
         </figure>
       </article>
     </session>
 
+
+    <!-- Feedbacks -->
     <session id="feedback">
       <h3>O que nossos alunos dizem<br>sobre a gente...</h3>
-      <div class="feedbacks">
+      <article class="feedbacks">
         <figure class="feedback-item">
-          <img src="./view/assets/image/feedbacks-image/Kassyanne-Alves.jpg" alt="Kassyanne Alves">
+          <img src="./view/assets/image/feedbacks-image/Kassyanne-Alves.webp" alt="Kassyanne Alves" title="Kassyanne Alves">
           <figcaption>
             <p>Venho agradecer a atenção que o pessoal do Prol Educa dá a cada pai e mãe, em especial a Deyse. Super indico e graças a voces minha pequena vai pra escola por um preço super acessível.</p>
             <h4>Kassyanne Alves<br>Recife - PE</h4>
           </figcaption>
         </figure>
         <figure class="feedback-item">
-          <img src="./view/assets/image/feedbacks-image/Lusinete-Nascimento.jpg" alt="Lusinete Nascimento">
+          <img src="./view/assets/image/feedbacks-image/Lusinete-Nascimento.webp" alt="Lusinete Nascimento" title="Lusinete Nascimento">
           <figcaption>
             <p>A equipe Proleduca está de parabéns. Consegui uma bolsa em uma das melhores escola do meu bairro para o meu filho. O atendimento do pessoal é maravilhoso. Obrigada por me ajudar a da uma boa educação ao meu filho.</p>
             <h4>Lusinete Nascimento<br>Recife - PE</h4>
           </figcaption>
         </figure>
-      </div>
+      </article>
       <button class="button_component feedback-button" type="reset"></button>
     </session>
 
+
+    <!-- Questions -->
     <session id="question">
       <h3>Dúvidas Frequentes</h3>
       <figure class="question">
@@ -302,36 +314,24 @@
       </article>
     </session>
 
+
+    <!-- Footer -->
     <footer id="footer">
-      <img src="./view/assets/image/logos/logo_footer.png" alt="LOGO">
+      <a href="https://proleduca.com.br" target="_blank">
+        <img src="./view/assets/image/logos/logo_footer.png" alt="Logo Prol Educa" title="Prol Educa - Soluções Educacionais">
+      </a>
     </footer>
 
-    <!-- Cookies Policy -->
-    <!-- <section id="cookies" class="cookies">
-      <header class="cookiesHeader">
-        <i class="fa-solid fa-cookie-bite"></i>
-        <p>Este site usa Cookies</p>
-      </header>
-      <article class="cookiesDescription">
-        <p>Nós armazenamos dados temporariomante para melhorar a sua experiência de navegação e recomendar conteúdo de seu interesse. Ao utilizar nosso serviços, você concorda com tal monitoramento. Para mais informações, consulte a nossa <strong>Política de Cookies</strong>.</p>
-      </article>
-      <footer class="footer">
-        <button class="cookieBtn decline" id="closeCookiesWindow" type="button">Negar</button>
-        <button class="cookieBtn accept" id="acceptCookies" type="button">Aceitar</button>
-      </footer>
-    </section> -->
 
+    <!-- Cookies Policy -->
     <section id="cookies" class="cookies">
-      <!-- <header class="cookiesHeader">
-        <p>Este site usa Cookies</p>
-      </header> -->
       <article class="cookiesContent">
         <i class="fa-solid fa-cookie-bite"></i>
         <p>Este site utiliza cookies para te proporcionar uma melhor experiência. Ao continuar navegando, você aceita nossa <strong>Política de Cookies</strong>.</p>
-        <!-- <button class="cookieBtn decline" id="closeCookiesWindow" type="button">Negar</button> -->
         <button class="cookieBtn accept" id="acceptCookies" type="button">Ok. Entendi</button>
       </article>
     </section>
+
 
     <!-- Modal Window -->
     <session id="modal-container" class="modal-container" style="display: none;">
@@ -341,10 +341,10 @@
         </button>
         <header class="modal-content">
           <figure class="img">
-            <img src="./view/assets/image/images/foto-modal-campanha-b2c-atualizado.png" alt="stundent">
-          </figure>
+            <img src="./view/assets/image/images/foto-modal-campanha-b2c-atualizado.png" alt="Estudante" title="Estudante">
+          </figures>
           <figure class="content">
-            <img class="content_modal" src="./view/assets/image/background/fundo-modal.png" alt="fundo-modal">
+            <img class="content_modal" src="./view/assets/image/background/fundo-modal.png" alt="Imagem de fundo">
             <h3>A Prol Educa oferece Bolsas com <br> até <strong> 70% </strong>  de desconto!</h3>
             <button class="button_component"></button>
           </figure>
@@ -354,11 +354,13 @@
 
   </main>
 
+
   <!-- Scripts -->
   <script src="https://unpkg.com/axios@1.0.0/dist/axios.min.js"></script>
   <script type="text/javascript" src="./view/assets/scripts/components.js"></script>
   <script type="text/javascript" src="./view/assets/scripts/modal.js"></script>
   <script type="module" src="./view/assets/scripts/geolocation.js"></script>
   <script type="text/javascript" src="./view/assets/scripts/cookies.js"></script>
+
 </body>
 </html>
