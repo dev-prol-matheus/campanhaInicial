@@ -1,5 +1,6 @@
 #cookies {
   position: fixed;
+  left: 0;
   bottom: -30rem;
   width: 50%;
   margin: 1rem;
@@ -76,54 +77,3 @@
   font-size: 1.8rem;
   margin-right: 0.6rem;
 }
-
-/* #cookies .cookiesDescription {
-  width: 90%;
-}
-#cookies .cookiesDescription p {
-  text-align: justify;
-  color: #000000;
-  font-size: 1rem;
-}
-#cookies .cookiesDescription p strong {
-  font-size: 1rem;
-  color: var(--tertiary-color);
-  transition: .2s;
-}
-#cookies .cookiesDescription p strong:hover {
-  cursor: pointer;
-  color: var(--quintenary-color);
-}
-
-#cookies .footer {
-  width: 95%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  margin: 0;
-  padding-top: 0.4rem;
-}
-#cookies .footer .cookieBtn {
-  width: 8rem;
-  height: 2.5rem;
-  font-size: 1rem;
-  margin-left: 0.5rem;
-  transition: .3s;
-}
-#cookies .footer .cookieBtn:hover {
-  cursor: pointer;
-  font-size: 0.9rem;
-}
-#cookies .footer .cookieBtn.decline {
-  background-color: #bababa;
-}
-#cookies .footer .cookieBtn.decline:hover {
-  background-color: #858585;
-}
-#cookies .footer .cookieBtn.accept {
-  background-color: var(--tertiary-color);
-}
-#cookies .footer .cookieBtn.accept:hover {
-  background-color: #1b4584;
-} */
