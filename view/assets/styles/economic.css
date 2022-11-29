@@ -49,7 +49,7 @@
   margin: 2.5rem;
   position: relative;
   color: #FEFEFE;
-  box-shadow: 0 0 15px rgba(0,0,0,.300);
+  box-shadow: 0 0 15px rgba(0,0,0,.500);
 }
 #economic .wrapper-economic .item-economic .title-economic {
   position: absolute;

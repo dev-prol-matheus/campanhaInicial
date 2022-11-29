@@ -6,7 +6,7 @@
   justify-content: center;
   position: relative;
 }
-#header .container-header{
+#header .container-header {
   width: 70%;
   display: flex;
   flex-direction: row;
@@ -23,7 +23,7 @@
   position: relative;
   top: -2.5rem;
 }
-#header .container-header .text-header h1{
+#header .container-header .text-header h1 {
   font-size: 3rem;
   margin-bottom: 2rem;
   color: var(--secondary-color);
@@ -46,7 +46,7 @@
   text-shadow: 1px 1px 2px var(--primary-color);
 }
 
-#header .container-header .text-header p{
+#header .container-header .text-header p {
   font-size: 1.25rem;
   margin-top: 2rem;
 }
@@ -63,7 +63,7 @@
   width: 30rem; /*30rem*/
   height: 30.0625rem; /*30.0625rem*/
 }
-#header .container-header .wrapper-image img{
+#header .container-header .wrapper-image img {
   height: 110%; /*35rem*/
   position: absolute;
   bottom: 0;

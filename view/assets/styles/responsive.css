@@ -138,17 +138,25 @@
   }
 
   /* feedbacks */
-  #feedback .feedbacks {
-    width: 90%;
+  #feedback .feedbackBox {
+    flex-direction: column;
+    width: 70%;
   }
-  #feedback .feedback-item {
-    width: 37rem;
-    height: 16rem;
+  #feedback .feedbackBox .studentImage {
+    width: 70%;
+    margin: 1rem 0;
   }
-  #feedback .feedback-item div p{
-    max-width: 22rem;
-    left: 0.8rem;
-    top: 2rem;
+  #feedback .feedbackBox .studentImage img {
+    border-radius: 50%;
+  }
+  #feedback .feedbackBox .coment {
+    width: 100%;
+  }
+  #feedback .feedbackBox .coment p {
+    font-size: 1.8rem;
+  }
+  #feedback .feedbackBox .coment h4 {
+    font-size: 1.2rem;
   }
 
   /* Imagine */
@@ -194,6 +202,7 @@
   /* cookiesPolicy */
   #cookies {
     width: 100%;
+    height: 28%;
     margin: 0;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -210,10 +219,10 @@
   }
   #cookies .cookiesContent p {
     width: 80%;
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   #cookies .cookiesContent p strong {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   #cookies .cookiesContent button {
     font-size: 2rem;
@@ -222,7 +231,7 @@
 }
 @media only screen and (max-width: 330px) { 
   * {
-    font-size: 35%;
+    font-size: 40%;
   }
   #question .question {
     width: 80%;
@@ -232,5 +241,30 @@
   }
   #question .visitWebsiteButton {
     font-size: 6rem;
+  }
+
+
+  #imagine .imagine-img img {
+    width: 100%;
+    height: 100%;
+  }
+  #imagine .imagine-img figcaption {
+    font-size: 2.4rem;
+    color: #4b4b4b;
+    max-width: 40rem;
+  }
+
+  #feedback .feedback-item {
+    width: 42rem;
+    height: 20rem;
+  }
+  #feedback .feedback-item img {
+    height: 80%;
+    width: 80%;
+  }
+  #feedback .feedback-item figcaption p {
+    font-size: 1.8rem;
+    max-width: 30rem;
+    max-width: 40rem;
   }
 }
