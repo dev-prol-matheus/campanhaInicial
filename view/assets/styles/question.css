@@ -36,9 +36,9 @@
 }
 #question .question p {
   font-size: 1.3rem;
+  font-family: var(--nexa-light);
 }
 #question .question p .anchorP {
-  text-decoration: none;
   color: #FEFEFE;
   font-weight: bolder;
   font-size: 1.3rem;

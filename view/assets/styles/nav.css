@@ -8,7 +8,14 @@
   position: relative;
   top: 0;
 }
-
-#header #nav img {
+#header #nav a {
+  /* width: 315px;
+  height: 76px; */
+  width: 19.68rem;
   height: 4.75rem;
+}
+#header #nav img {
+  /* height: 4.75rem; */
+  height: 100%;
+  width: 100%;
 }

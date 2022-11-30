@@ -24,7 +24,7 @@
   top: -2.5rem;
 }
 #header .container-header .text-header h1 {
-  font-size: 3rem;
+  font-size: 2.7rem;
   margin-bottom: 2rem;
   color: var(--secondary-color);
 }
@@ -49,6 +49,7 @@
 #header .container-header .text-header p {
   font-size: 1.25rem;
   margin-top: 2rem;
+  font-family: var(--secondary-font);
 }
 #header .container-header .text-header #whatsapp-brands {
   font-size: 1.3rem;

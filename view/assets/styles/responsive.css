@@ -159,7 +159,7 @@
   }
 
   /* Imagine */
-  #imagine .imagine-img p{
+  #imagine .imagine-img p {
     font-size: 1.6rem;
     font-weight: bolder;
     max-width: 35rem;
@@ -242,11 +242,6 @@
     font-size: 6rem;
   }
 
-
-  #imagine .imagine-img img {
-    width: 100%;
-    height: 100%;
-  }
   #imagine .imagine-img figcaption {
     font-size: 2.4rem;
     color: #4b4b4b;
@@ -278,5 +273,9 @@
   }
   #offerings .statistics .item-statistics h5 {
     font-size: 2rem;
+  }
+
+  #offerings .investors img {
+    width: 90%;
   }
 }

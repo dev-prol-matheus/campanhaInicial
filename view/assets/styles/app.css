@@ -1,6 +1,6 @@
 * {
   font-size: 100%;
-  font-family: 'Roboto'; /* var(--primary-font) */
+  font-family: var(--nexa-bold), var(--alternative-font);
   padding: 0;
   margin: 0;
 }
@@ -15,7 +15,8 @@ button {
   border: none;
   cursor: pointer;
   transition: 0.6s;
-  font-family: Helvetica, sans-serif;
+  /* font-family: Helvetica, sans-serif; */
+  font-family: var(--nexa-book), 'Helvetica';
   font-weight: bolder;
   font-size: 1.2rem;
   position: relative;

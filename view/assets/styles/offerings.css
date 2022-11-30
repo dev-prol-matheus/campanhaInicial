@@ -36,7 +36,7 @@
     width: 70%;
     display: flex;
     justify-content: space-around;
-    margin: 2rem 0 3rem 0;
+    margin: 2rem 0 7rem 0;
 }
 #offerings .statistics .item-statistics p {
     font-size: 2rem;
@@ -47,52 +47,17 @@
 #offerings .title-logos {
     font-size: 2.6rem;
 }
-#offerings .investidores {
+#offerings .investors {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     margin: 1rem 0 2rem 0;
+    width: 47rem;
 }
-#offerings .investidores img {
+#offerings .investors img {
     height: 100%;
-    width: 70%;
+    width: 40%;
     margin: 0.6rem;
-}
-
-
-
-
-
-
-
-
-
-
-
-#offerings .simbols{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#offerings .simbols .item-simbols{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 9rem;
-    width: 10rem;
-    align-items: center;
-    margin: 1rem;
-}
-#offerings .simbols .item-simbols img{
-    width: 50%;
-    position: absolute;
-    top: 0;
-}
-#offerings .simbols .item-simbols p{
-    font-size: 0.8rem;
-    position: absolute;
-    bottom: 0;
-    text-align: center;
 }

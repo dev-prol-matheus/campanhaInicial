@@ -1,41 +1,45 @@
 /*IMAGINE STYLE*/
 
-#imagine{
+#imagine {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
     color: var(--secondary-color);
 }
-#imagine h3{
+#imagine h3 {
     font-size: 3rem;
     margin: 3rem 0 2rem 0;
 }
-#imagine .wrapper-imagine{
+#imagine .wrapper-imagine {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
     margin: 2rem 0 1rem 0;
 }
-#imagine .imagine-img{
+#imagine .imagine-img {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 35rem;
+    height: 30rem;
     margin: 1rem;
 }
-#imagine .imagine-img img{
+#imagine .imagine-img img {
     margin-bottom: 1rem;
     width: 100%;
+    height: 100%;
 }
-#imagine .imagine-img figcaption{
+#imagine .imagine-img figcaption {
     font-size: 1.4rem;
     text-align: center;
     margin-bottom: 2rem;
     max-width: 27rem;
+    color: #4b4b4b;
+    font-family: var(--nexa-book);
 }
-#imagine button{
+#imagine button {
     margin: 1rem 0 2rem 0;
 }

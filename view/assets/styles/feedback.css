@@ -7,7 +7,7 @@
 }
 #feedback h3 {
   font-size: 3rem;
-  margin: 2rem 0 2rem 0;
+  margin: 5rem 0 2rem 0;
   text-align: center;
   color: var(--secondary-color);
 }
@@ -42,7 +42,8 @@
 }
 #feedback .feedbackBox .coment p {
   font-size: 1.1rem;
-  font-family: var(--secondary-font);
+  /* font-family: var(--nexa-book); */
+  font-family: var(--nexa-light);
   font-weight: light;
   color: #646464;
 }
