@@ -32,7 +32,6 @@
   <!-- Google Fonts -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
@@ -58,10 +57,10 @@
   <style>
     html {scroll-behavior: smooth;}
     :target {scroll-margin-top: 4.6rem;}
-    @font-face {
-      font-family: 'Nexa';
-      src: url('../assets/fonts/Nexa Bold.otf') format('opentype'), url('./fonts/Nexa Light.otf') format('opentype');
-    }
+    @font-face {font-family: 'Nexa Light'; src: url('./view/assets/fonts/Nexa Light.otf') format('opentype');}
+    @font-face {font-family: 'Nexa Book'; src: url('./view/assets/fonts/Nexa Book.otf') format('opentype');}
+    @font-face {font-family:'Nexa Regular'; src: url('./view/assets/fonts/Nexa Regular.otf') format('opentype');}
+    @font-face {font-family: 'Nexa Bold'; src: url('./view/assets/fonts/Nexa Bold.otf') format('opentype');}
     :root {
       --primary-color: #D35050;
       --secondary-color: #10105B;
@@ -69,11 +68,14 @@
       --quaternary-color: #497AC5;
       --quintenary-color: #68ABE5;
       --whatsapp: #4ecb5c;
-      --primary-font: Nexa;
-      --primary-font-bold: Nexa Bold;
-      --secondary-font: 'Open Sans', sans-serif;
+
+      --nexa-light: 'Nexa Light';
+      --nexa-book: 'Nexa Book';
+      --nexa-regular: 'Nexa Regular';
+      --nexa-bold: 'Nexa Bold';
+      --alternative-font: 'Open Sans', sans-serif;
     }
-    body {overflow-x: hidden !important;} 
+    body {overflow-x: hidden !important;}
   </style>
 
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbYARJZIokGAt0KS7LheI-V5RwqGlwTB8"></script>
@@ -125,21 +127,21 @@
       <article class="area-itens">
         <figure class="wrapper-item">
           <div class="wrapper-icon">
-            <i class="fa-solid fa-hand-holding-dollar" title="Educação de qualidade a preço justo"></i>
+            <i class="fa-solid fa-hand-holding-dollar" title="Educação de qualidade a preço justo"></i> <!-- alterar -->
           </div>
           <figcaption>Educação de qualidade a preço justo.</figcaption>
         </figure>
 
         <figure class="wrapper-item">
           <div class="wrapper-icon">
-            <i class="fa-solid fa-face-grin-stars" title="Trocar a educação pública pela educação privada"></i>
+            <i class="fa-solid fa-face-grin-stars" title="Trocar a educação pública pela educação privada"></i> <!-- alterar -->
           </div>
           <figcaption>Trocar a educação pública pela educação privada.</figcaption>
         </figure>
 
         <figure class="wrapper-item">
           <div class="wrapper-icon">
-            <i class="fa-solid fa-face-sad-cry" title="Deixar de se preocupar com greves e paralizações"></i>
+            <i class="fa-solid fa-face-sad-cry" title="Deixar de se preocupar com greves e paralizações"></i> <!-- alterar -->
           </div>
           <figcaption>Deixar de se preocupar com greves e paralizações.</figcaption>
         </figure>
@@ -243,7 +245,7 @@
         </article>
 
         <h3 class="title-logos">Quem acredita</h3>
-        <figure class="investidores">
+        <figure class="investors">
           <img src="./view/assets/image/logos/Google_for_Startups_logo.svg" alt="Google For STARTUPS" title="Google For Startups">
           <img src="./view/assets/image/logos/Artemisia.svg" alt="Facebook" title="Estação Hack - São Paulo from Facebook">
         </figure>
