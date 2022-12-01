@@ -49,7 +49,7 @@
 #header .container-header .text-header p {
   font-size: 1.25rem;
   margin-top: 2rem;
-  font-family: var(--secondary-font);
+  font-family: var(--nexa-book);
 }
 #header .container-header .text-header #whatsapp-brands {
   font-size: 1.3rem;

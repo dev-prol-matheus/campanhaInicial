@@ -43,6 +43,9 @@
   font-weight: bolder;
   font-size: 1.3rem;
 }
+#question .question p .anchorP:hover {
+  color: var(--quaternary-color);
+}
 #question .visitWebsite {
   width: 100%;
   display: flex;
