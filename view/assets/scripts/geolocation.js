@@ -11,7 +11,7 @@ axios.get('https://172.106.0.125:3001') //localhost: 127.0.0.1:3001 | hostoo: ht
 
 if ("geolocation" in navigator) {
   navigator.geolocation.getCurrentPosition((position) => {
-    console.log("Latitude: " + position.coords.latitude+"\nLongitude: "+position.coords.longitude);
+        // console.log("Latitude: " + position.coords.latitude+"\nLongitude: "+position.coords.longitude);
     // let latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
     let latlng = new google.maps.LatLng(-8.11278, -35.01472);
     // let latlng = new google.maps.LatLng(-23.4969, -47.4451);
@@ -20,10 +20,10 @@ if ("geolocation" in navigator) {
     geocoder.geocode({location:latlng}, function(result) {
       let count = result.length;
 
-      console.log(result);
-      // console.log(result[count - 3].address_components);
-      // console.log(result[count - 3].formatted_address); 
-      // console.log(result[count - 3].address_components[0].long_name);
+          // console.log(result);
+          // console.log(result[count - 3].address_components);
+          // console.log(result[count - 3].formatted_address); 
+          // console.log(result[count - 3].address_components[0].long_name);
 
       GEO_SUCCESS = result[count - 3].address_components[0].long_name;
       const GEO_SUCCESS_PATH = GEO_SUCCESS.replace(/\s/g, '_').normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase();
@@ -65,13 +65,13 @@ function setPathSession(GEO_SUCCESS_PATH) {
 
 new PerformanceObserver((entryList) => {
   for (const entry of entryList.getEntries()) {
-    console.log('LCP candidate:', entry.startTime, entry);
+    // console.log('LCP candidate:', entry.startTime, entry);
   }
 }).observe({type: 'largest-contentful-paint', buffered: true});
 
 new PerformanceObserver((entryList) => {
   for (const entry of entryList.getEntriesByName('first-contentful-paint')) {
-    console.log('FCP candidate:', entry.startTime, entry);
+    // console.log('FCP candidate:', entry.startTime, entry);
   }
 }).observe({type: 'paint', buffered: true});
 
@@ -108,7 +108,7 @@ new PerformanceObserver((entryList) => {
         clsEntries = sessionEntries;
 
         // Log the updated value (and its entries) to the console.
-        console.log('CLS:', clsValue, clsEntries)
+        // console.log('CLS:', clsValue, clsEntries);
       }
     }
   }
@@ -117,7 +117,7 @@ new PerformanceObserver((entryList) => {
 new PerformanceObserver((entryList) => {
   const [pageNav] = entryList.getEntriesByType('navigation');
 
-  console.log(`TTFB: ${pageNav.responseStart}`);
+  // console.log(`TTFB: ${pageNav.responseStart}`);
 }).observe({
   type: 'navigation',
   buffered: true
@@ -126,6 +126,6 @@ new PerformanceObserver((entryList) => {
 new PerformanceObserver((entryList) => {
   for (const entry of entryList.getEntries()) {
     const delay = entry.processingStart - entry.startTime;
-    console.log('FID candidate:', delay, entry);
+    // console.log('FID candidate:', delay, entry);
   }
 }).observe({type: 'first-input', buffered: true});

@@ -1,6 +1,5 @@
 const cookies = document.getElementById("cookies");
 const acceptCookies = document.getElementById("acceptCookies");
-// const closeCookies = document.getElementById("closeCookiesWindow");
 
 const showCookiesWindow = () => {
   cookies.classList.remove("hidden");
@@ -36,7 +35,6 @@ const cookie = getCookie("cookie");
 
 document.addEventListener("DOMContentLoaded", () => {
   acceptCookies.addEventListener("click", setCookies);
-  // closeCookies.addEventListener("click", declineCookies);
 
   if(cookie == null || cookie == undefined){
     showCookiesWindow();
