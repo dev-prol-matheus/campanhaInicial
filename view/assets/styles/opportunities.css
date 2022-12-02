@@ -32,7 +32,8 @@
   flex-wrap: wrap;
 }
 #opportunities .area-itens .wrapper-item {
-  width: 18rem;
+  width: 17rem;
+  height: 16rem;
   margin: 0.8rem;
   display: flex;
   flex-direction: column;
@@ -47,8 +48,9 @@
   align-items: center;
 }
 #opportunities .area-itens .wrapper-item .wrapper-icon img {
-  width: 12.5rem;
-  height: 12.5rem;
+  width: 9.375rem;
+  height: 9.375rem;
+  object-fit: cover;
   color: #FAFAFA;
 }
 #opportunities .area-itens .wrapper-item .wrapper-icon i {

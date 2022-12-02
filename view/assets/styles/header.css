@@ -61,8 +61,8 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 30rem; /*30rem*/
-  height: 30.0625rem; /*30.0625rem*/
+  width: 30rem;
+  height: 30.0625rem;
 }
 #header .container-header .wrapper-image img {
   height: 110%; /*35rem*/

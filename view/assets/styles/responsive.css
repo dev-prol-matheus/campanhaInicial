@@ -31,7 +31,10 @@
     width: 100%;
   }
   #opportunities .area-itens .wrapper-item {
-    margin: 0.5rem;
+    margin: 0.5rem 0.5rem 1.5rem;
+  }
+  #opportunities .area-itens figcaption {
+    font-size: 1.8rem;
   }
 
   /* BOTÃO PARA IR PARA O WHATSAPP */
@@ -46,6 +49,7 @@
     width: 36.25rem;
   }
 
+  /* class global button */
   button {
     display: flex;
     justify-content: center;
@@ -68,7 +72,6 @@
   #economic p {
     max-width: 85%;
   }
-
   #economic .wrapper-economic .item-economic {
     height: 14.25rem;
     width: 28.875rem;
@@ -103,8 +106,8 @@
     text-shadow: 1px 1px 2px var(--primary-color);
   }
 
-  /* Offerings */
 
+  /* Offerings */
   #offerings {
     width: 90%;
   }
@@ -228,10 +231,22 @@
     margin: 1.5rem 0;
   }
 }
-@media only screen and (max-width: 350px) { 
+@media only screen and (max-width: 425px) { 
   * {
     font-size: 40%;
   }
+
+  /* header */
+  #header .container-header .text-header h1 {
+    font-size: 3.2rem;
+    margin: 1rem 0;
+  }
+  #header .container-header .wrapper-image {
+    width: 36rem;
+    height: 38.0625rem;
+  }
+
+  /* question */
   #question .question {
     width: 80%;
   }
@@ -242,40 +257,132 @@
     font-size: 6rem;
   }
 
+
+  /* opportunities */
+  #opportunities {
+    padding: 1.5rem 0 3.5rem;
+  }
+  #opportunities .title h3 {
+    font-size: 2.5rem;
+  }
+  #opportunities .area-itens .wrapper-item {
+    margin: 0.3rem 0;
+    height: 23rem;
+    justify-content: flex-start;
+  }
+  #opportunities .area-itens figcaption {
+    font-size: 2.2rem;
+  }
+  #opportunities .area-itens .wrapper-item .wrapper-icon img {
+    width: 10.375rem;
+    height: 10.375rem;
+  }
+
+  /* regions */
+  #regions button {
+    padding: 0 4rem;
+    font-size: 2rem;
+  }
+
+
+  /* imagine */
+  #imagine .imagine-img {
+    width: 42rem;
+    height: auto;
+    margin-bottom: none;
+  }
+  #imagine .imagine-img img {
+    width: 40rem;
+  }
   #imagine .imagine-img figcaption {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     color: #4b4b4b;
     max-width: 40rem;
   }
 
 
+  /* economic */
   #economic h3 {
     font-size: 3.5rem;
     margin: 2.8rem 0;
   }
   #economic p {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
   #economic p strong {
-    font-size: 2.7rem !important;
+    font-size: 3rem !important;
   }
 
 
+  /* offerings */
   #offerings .title-offerings p {
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     width: 91%;
   }
   #offerings .statistics {
     flex-direction: column;
   }
   #offerings .statistics .item-statistics p {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   #offerings .statistics .item-statistics h5 {
+    font-size: 1.8rem;
+  }
+  #offerings .investors img {
+    width: 90%;
+  }
+  
+
+  /* feedbacks */
+  #feedback .feedbackBox {
+    align-items: center;
+    padding: 2.8rem 0;
+  }
+  #feedback .feedbackBox .studentImage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem;
+  }
+  #feedback .feedbackBox .studentImage img {
+    width: 70%;
+  }
+  #feedback .feedbackBox .coment {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #feedback .feedbackBox .coment p {
+    width: 85%;
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+  }
+  #feedback .feedbackBox .coment h4 {
+    text-align: center;
+  }
+
+  /* question */
+  #question .question p {
+    font-size: 2.2rem;
+  }
+  #question .question h4 {
+    font-size: 2.2rem;
+  }
+  #question .question p .anchorP {
+    font-size: 2.6rem;
+  }
+  #question .visitWebsite button a {
     font-size: 2rem;
   }
 
-  #offerings .investors img {
-    width: 90%;
+  /* footer */
+  #footer {
+    padding: 1rem 0;
+  }
+  #footer .footerImage {
+    height: 3.8rem;
   }
 }
