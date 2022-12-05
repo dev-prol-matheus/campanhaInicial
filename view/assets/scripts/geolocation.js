@@ -11,11 +11,11 @@ axios.get('http://localhost/campanhaInicial/controllers/mock.php') //localhost: 
 
 if ("geolocation" in navigator) {
   navigator.geolocation.getCurrentPosition((position) => {
-        // console.log("Latitude: " + position.coords.latitude+"\nLongitude: "+position.coords.longitude);
-    let latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+    console.log("Latitude: " + position.coords.latitude+"\nLongitude: "+position.coords.longitude);
+    // let latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
     // let latlng = new google.maps.LatLng(-8.11278, -35.01472);
     // let latlng = new google.maps.LatLng(-23.4969, -47.4451);
-    // let latlng = new google.maps.LatLng(-7.11278, -35.01472);
+    let latlng = new google.maps.LatLng(-7.11278, -35.01472);
     let geocoder = new google.maps.Geocoder();
     geocoder.geocode({location:latlng}, function(result) {
       let count = result.length;
@@ -23,12 +23,12 @@ if ("geolocation" in navigator) {
       // console.log(result);
       // console.log(result[count - 3].address_components);
       // console.log(result[count - 3].formatted_address); 
-      // console.log(result[count - 3].address_components[0].long_name);
+      console.log(result[count - 3].address_components[0].long_name);
 
       GEO_SUCCESS = result[count - 3].address_components[0].long_name;
       const GEO_SUCCESS_PATH = GEO_SUCCESS.replace(/\s/g, '_').normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase();
 
-      const locale_array = ['Recife', 'Jaboatãoo dos Guararapes', 'Olinda', 'Paulista', 'Sorocaba', 'Caruaru'];
+      const locale_array = ['Recife', 'Jaboatão dos Guararapes', 'Olinda', 'Paulista', 'Sorocaba', 'Caruaru'];
       console.log(DATA);
       locale_array.forEach((item) => {
         switch(GEO_SUCCESS) {
@@ -54,14 +54,26 @@ function setPathSession(GEO_SUCCESS_PATH) {
   </article>
   <button class="button_component" type="reset">Entre em contato para garantir a vaga do seu filho</button>
   `;
-  
-  GLOBAL_KEY = `DATA.${GEO_SUCCESS_PATH}`;
-  let array = eval(`${GLOBAL_KEY}`);
-  array.forEach((item) => {
-    document.getElementById('partners').innerHTML += `
-      <img src="./view/assets/image/school_prol_educa/${GEO_SUCCESS_PATH}/${item}" alt="Escola ${item}">
+
+  if(DATA == undefined || DATA == null || DATA == '') {
+    document.getElementById('partners').innerHTML = `
+      <img src="./view/assets/image/school_prol_educa/default/avance.svg" alt="Escola Avance">
+      <img src="./view/assets/image/school_prol_educa/default/cesfa.png" alt="Escola Cesfa">
+      <img src="./view/assets/image/school_prol_educa/default/colegio_inovacao.png" alt="Escola Colegio Inovacao">
+      <img src="./view/assets/image/school_prol_educa/default/gremio.svg" alt="Escola Gremio">
+      <img src="./view/assets/image/school_prol_educa/default/milenio.png" alt="Escola Milenio">
+      <img src="./view/assets/image/school_prol_educa/default/oasis.jpeg" alt="Escola Oasis">
+      <img src="./view/assets/image/school_prol_educa/default/saber.svg" alt="Escola Saber">
     `;
-  })
+  } else {
+    GLOBAL_KEY = `DATA.${GEO_SUCCESS_PATH}`;
+    let array = eval(`${GLOBAL_KEY}`);
+    array.forEach((item) => {
+      document.getElementById('partners').innerHTML += `
+        <img src="./view/assets/image/school_prol_educa/${GEO_SUCCESS_PATH}/${item}" alt="Escola ${item}">
+      `;
+    })
+  }
 }
 
 new PerformanceObserver((entryList) => {
