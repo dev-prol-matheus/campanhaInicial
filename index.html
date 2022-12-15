@@ -206,6 +206,7 @@
           </figure>
         </session>
       </article>
+      <button class="button_component" type="button"></button>
     </session>
 
 
@@ -265,6 +266,7 @@
           <h4>Lusinete Nascimento<br>Recife - PE</h4>
         </figcaption>
       </article>
+      <button class="button_component" type="button"></button>
     </section>
 
 
@@ -333,23 +335,23 @@
     <session id="modal-container" class="modal-container">
       <article id="modal" class="modal">
         <button id="close-modal-btn" class="close-modal-btn"> x </button>
-        <header class="modal-content" style="display: none;">
+        <header class="modal-content">
           <img src="./view/assets/image/logos/logo_header.png" alt="Prol Educa" title="Prol Educa - Soluções educacionais">
-          <figcaption class="contact">Prol Educa - Soluções Educacionais</figcaption>
+          <figcaption class="contact-name">Prol Educa - Soluções Educacionais</figcaption>
           <status class="status">online</status>
         </header>
         <section class="modal-body">
           <span class="message">Receba informações sobre nosso Colégio, valores de matrícula, mensalidades e Bolsa de Estudo.</span>
-          <form class="">
-            <input id="name" name="name" type="text" placeholder="Nome" required>
-            <input id="email" name="email" type="email" placeholder="E-mail" required>
-            <input id="phone" name="phone" type="text" placeholder="Número" required>
-            <input id="location" name="location" type="text" style="visibility: hidden;">
+          <form class="whatsapp-form">
+            <input id="name" name="name" type="text" class="whatsapp-formInput" placeholder="Nome" required>
+            <input id="email" name="email" type="email" class="whatsapp-formInput" placeholder="E-mail" required>
+            <input id="phone" name="phone" type="text" class="whatsapp-formInput" placeholder="Número" required>
+            <input id="location" name="location" type="text" class="whatsapp-formInput" style="visibility: hidden; margin: 0; padding: 0;">
             <agree class="agreeBox">
-              <input id="agree" type="checkbox" required>
+              <input id="agree" type="checkbox" class="agreeBoxInput" required>
               <label for="agree">Eu concordo em receber comunicações.</label>
             </agree>
-            <button id="sendWhatsappData" type="reset">
+            <button id="sendWhatsappData" class="sendWhatsappData" type="button">
               <a href="https://wa.me/5581996857745?text=Ol%C3%A1%20pessoal%20do%20Prol%20Educa!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20Bolsa%20de%20Estudo."> <img id="whatsapp-img" src="./view/assets/image/icons/whatsapp_icon.webp" alt="whatsapp icon">
                 <h5>Iniciar Conversa</h5>
               </a>
