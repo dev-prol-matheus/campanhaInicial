@@ -20,7 +20,16 @@ if ("geolocation" in navigator) {
     geocoder.geocode({location:latlng}, function(result) {
       let count = result.length;
 
+      console.log(result);
+      const address = console.log(result[count - 6].formatted_address);
       console.log(result[count - 3].address_components[0].long_name);
+
+      // Condicional que irá para o model e preenchera a localização no banco de dados
+      if(address != null && address != '') {
+        document.getElementById('location').value = address;
+      } else {
+        document.getElementById('location').value = result[count - 3].formatted_address;
+      }
 
       GEO_SUCCESS = result[count - 3].address_components[0].long_name;
       const GEO_SUCCESS_PATH = GEO_SUCCESS.replace(/\s/g, '_').normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase();
@@ -40,6 +49,7 @@ if ("geolocation" in navigator) {
   }, error => {
     console.log(error);
     DATA = undefined;
+    document.getElementById('location').value = 'NULL';
     setPathSession();
   });
 } else {
