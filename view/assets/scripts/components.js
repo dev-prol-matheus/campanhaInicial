@@ -1,5 +1,6 @@
 const buttonComponent = document.querySelectorAll('.button_component');
-const modal = 
+const modalContainer = document.getElementById("modal-container");
+const modal = document.getElementById("modal");
 
 function createButtonComponents() {
   buttonComponent.forEach((button) => {
@@ -10,5 +11,7 @@ function createButtonComponents() {
 createButtonComponents();
 
 function assignMethod() {
-
+  let action = "show";
+  modalContainer.classList.add(action);
+  modal.classList.add(action);
 };
