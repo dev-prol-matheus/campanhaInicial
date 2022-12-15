@@ -1,7 +1,7 @@
 <?php 
   include('../models/connection/connection.php');
-  $connection = new Connection();
-  // $connection->setConn('172.106.0.125','lading_page_btc', 'users_lead', 'Jesus&&77');
+  include('../models/connection/localOrProduction.php');
+  
   try {
     $data = json_decode(file_get_contents('php://input'), true);
     $name = $data['name'];
