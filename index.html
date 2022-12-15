@@ -97,7 +97,7 @@
       <article class="container-header">
         <aside class="text-header">
           <h1>Quer matricular seu filho(a) na escola particular em <strong>2023</strong> com uma bolsa de estudo de até <strong class="seven">70%</strong></h1>
-          <button class="button_component" type="reset"></button>
+          <button class="button_component" type="button"></button>
           <p><strong>*</strong> Estamos disponíveis para te atender!</p>
         </aside>
         <figure class="wrapper-image">
@@ -182,7 +182,7 @@
           <figcaption>Seu filho entrando em uma universidade federal porque teve uma educação que o deixou preparado.</figcaption>
         </figure>
       </article>
-      <button class="button_component" type="reset"></button>
+      <button class="button_component" type="button"></button>
     </session>
 
 
@@ -330,8 +330,8 @@
 
 
     <!-- Modal Window -->
-    <session id="modal-container" class="modal-container" style="visibility: visible;">
-      <article class="modal">
+    <session id="modal-container" class="modal-container">
+      <article id="modal" class="modal">
         <button id="close-modal-btn" class="close-modal-btn"> x </button>
         <header class="modal-content" style="display: none;">
           <img src="./view/assets/image/logos/logo_header.png" alt="Prol Educa" title="Prol Educa - Soluções educacionais">
@@ -349,10 +349,13 @@
               <input id="agree" type="checkbox" required>
               <label for="agree">Eu concordo em receber comunicações.</label>
             </agree>
-            <button id="sendWhatsappData" type="reset">Iniciar Conversa</button>
+            <button id="sendWhatsappData" type="reset">
+              <a href="https://wa.me/5581996857745?text=Ol%C3%A1%20pessoal%20do%20Prol%20Educa!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20Bolsa%20de%20Estudo."> <img id="whatsapp-img" src="./view/assets/image/icons/whatsapp_icon.webp" alt="whatsapp icon">
+                <h5>Iniciar Conversa</h5>
+              </a>
+            </button>
           </form>
         </section>
-
       </article>
     </session>
 
