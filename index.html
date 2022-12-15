@@ -3,7 +3,7 @@
 <head>
 
   <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  <script type="text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
@@ -182,7 +182,7 @@
           <figcaption>Seu filho entrando em uma universidade federal porque teve uma educação que o deixou preparado.</figcaption>
         </figure>
       </article>
-      <button class="button_component" type="reset">Entre em contato para garantir a vaga do seu filho</button>
+      <button class="button_component" type="reset"></button>
     </session>
 
 
@@ -330,21 +330,29 @@
 
 
     <!-- Modal Window -->
-    <session id="modal-container" class="modal-container" style="display: none;">
+    <session id="modal-container" class="modal-container" style="visibility: visible;">
       <article class="modal">
-        <button id="close-modal-btn" class="close-modal-btn">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-        <header class="modal-content">
-          <figure class="img">
-            <img src="./view/assets/image/images/foto-modal-campanha-b2c-atualizado.webp" alt="Estudante" title="Estudante">
-          </figures>
-          <figure class="content">
-            <img class="content_modal" src="./view/assets/image/background/fundo-modal.png" alt="Imagem de fundo">
-            <h3>A Prol Educa oferece Bolsas com <br> até <strong> 70% </strong>  de desconto!</h3>
-            <button class="button_component"></button>
-          </figure>
+        <button id="close-modal-btn" class="close-modal-btn"> x </button>
+        <header class="modal-content" style="display: none;">
+          <img src="./view/assets/image/logos/logo_header.png" alt="Prol Educa" title="Prol Educa - Soluções educacionais">
+          <figcaption class="contact">Prol Educa - Soluções Educacionais</figcaption>
+          <status class="status">online</status>
         </header>
+        <section class="modal-body">
+          <span class="message">Receba informações sobre nosso Colégio, valores de matrícula, mensalidades e Bolsa de Estudo.</span>
+          <form class="">
+            <input id="name" name="name" type="text" placeholder="Nome" required>
+            <input id="email" name="email" type="email" placeholder="E-mail" required>
+            <input id="phone" name="phone" type="text" placeholder="Número" required>
+            <input id="location" name="location" type="text" style="visibility: hidden;">
+            <agree class="agreeBox">
+              <input id="agree" type="checkbox" required>
+              <label for="agree">Eu concordo em receber comunicações.</label>
+            </agree>
+            <button id="sendWhatsappData" type="reset">Iniciar Conversa</button>
+          </form>
+        </section>
+
       </article>
     </session>
 
@@ -352,11 +360,12 @@
 
 
   <!-- Scripts -->
-  <script src="https://unpkg.com/axios@1.0.0/dist/axios.min.js"></script>
-  <script type="text/javascript" src="./view/assets/scripts/components.js"></script>
+  <script type="module" src="https://unpkg.com/axios@1.0.0/dist/axios.min.js"></script>
   <script type="module" src="./view/assets/scripts/geolocation.js"></script>
-  <script type="text/javascript" src="./view/assets/scripts/cookies.js"></script>
-  <!-- <script type="text/javascript" src="./view/assets/scripts/modal.js"></script> -->
+  <script type="module" src="./view/assets/scripts/cookies.js"></script>
+  <script type="module" src="./view/assets/scripts/modal.js"></script>
+  <script type="module" src="./view/assets/scripts/components.js"></script>
+  <script type="module" src="./view/assets/scripts/getModalData.js"></script>
 
 </body>
 </html>
