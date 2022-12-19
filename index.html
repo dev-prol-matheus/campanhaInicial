@@ -171,6 +171,10 @@
     <!-- Schools -->
     <session id="regions"></session>
 
+    <session style="width:100%; display: flex; justify-content: center;">
+      <button class="button_component" type="button"></button>
+    </session>
+
 
     <!-- Imagine -->
     <session id="imagine">
@@ -353,11 +357,12 @@
             <input id="name" name="name" type="text" class="whatsapp-formInput" placeholder="Nome" required>
             <input id="email" name="email" type="email" class="whatsapp-formInput" placeholder="E-mail" required>
             <input id="phone" name="phone" type="text" class="whatsapp-formInput" placeholder="Número" required>
-            <input id="location" name="location" type="text" class="whatsapp-formInput" style="visibility: hidden; margin: 0; padding: 0;">
-            <agree class="agreeBox">
+            <input id="location" name="location" type="text" class="whatsapp-formInput inputlocation" style="visibility: hidden; margin: 0; padding: 0;">
+            <!-- <agree class="agreeBox">
               <input id="agree" type="checkbox" class="agreeBoxInput" required>
               <label for="agree">Eu concordo em receber comunicações.</label>
-            </agree>
+            </agree> -->
+            <span id="response" class="response">E-mail ou senha incorretos. Por favor, verifique os dados.</span>
             <button id="sendWhatsappData" class="sendWhatsappData" type="button">
               <a href="#"> <img id="whatsapp-img" src="./view/assets/image/icons/whatsapp_icon.webp" alt="whatsapp icon">
                 <h5>Iniciar Conversa</h5>
