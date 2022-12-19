@@ -1,6 +1,5 @@
 <?php 
   include('../models/connection/connection.php');
-  include('../models/connection/localOrProduction.php');
   
   try {
     $data = json_decode(file_get_contents('php://input'), true);
