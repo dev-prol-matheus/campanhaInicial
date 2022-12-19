@@ -16,6 +16,7 @@ createButtonComponents();
 
 function assignMethod() {
   let action = "show";
+  modalContainer.classList.remove("hidden");
   modalContainer.classList.add(action);
   modal.classList.add(action);
 };

@@ -21,6 +21,16 @@
   }
 }
 
+@keyframes hidden_modal {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
 /*modal-container*/
 #modal-container {
   width: 100vw;
@@ -33,12 +43,14 @@
   justify-content: center;
   align-items: center;
   background-color: #00000080;
+}
+
+#modal-container.hidden {
   visibility: hidden;
 }
 
 #modal-container.show {
   visibility: visible;
-  animation: show_modal_container .5s;
 }
 
 /*close-modal-btn*/
@@ -67,7 +79,6 @@
   width: 30%;
   height: 80%;
   min-width: 22rem;
-  visibility: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,7 +93,6 @@
 }
 
 .modal.show {
-  visibility: visible;
   animation: show_modal 0.5s;
 }
 
@@ -120,8 +130,8 @@
   border-radius: 8px;
   font-size: 1rem;
   color: #606060;
-  /*background-color: #FFFFFF;*/
   background-color: #FFFFFF;
+  box-shadow: 0 0 8px rgba(0,0,0,.100);
 }
 
 /*modal-body*/
@@ -150,14 +160,22 @@
   width: 80%;
   padding: 0.7rem;
   margin: 0.2rem 0;
-  border: 1px solid #c2c2c2;
+  border: 1px solid #e1e1e1;
   border-radius: 4px;
+  outline: 2px solid transparent;
   background-color: #f4f4f4;
   box-shadow: 0 0 2px rgba(0, 0, 0, .100);
+  transition: .3s;
+  color: #565656;
 }
 
 .modal-body .whatsapp-form .whatsapp-formInput::placeholder {
   color: #b8b8b8;
+}
+
+.modal-body .whatsapp-form .whatsapp-formInput:focus {
+  outline: 2px solid #2e8de17c;
+  border-color: transparent;
 }
 
 .modal .whatsapp-form .whatsapp-formInput.inputlocation {

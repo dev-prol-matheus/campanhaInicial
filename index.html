@@ -174,7 +174,7 @@
     <session style="width:100%; display: flex; justify-content: center;">
       <button class="button_component" type="button"></button>
     </session>
-    
+
 
     <!-- Imagine -->
     <session id="imagine">
@@ -343,7 +343,7 @@
 
 
     <!-- Modal Window -->
-    <session id="modal-container" class="modal-container">
+    <session id="modal-container" class="modal-container hidden">
       <article id="modal" class="modal">
         <button id="close-modal-btn" class="close-modal-btn"> x </button>
         <header class="modal-content">
@@ -362,7 +362,7 @@
               <input id="agree" type="checkbox" class="agreeBoxInput" required>
               <label for="agree">Eu concordo em receber comunicações.</label>
             </agree>
-            <span id="response">E-mail ou senha incorretos. </span>
+            <span id="response" class="response"></span>
             <button id="sendWhatsappData" class="sendWhatsappData" type="button">
               <a href="#"> <img id="whatsapp-img" src="./view/assets/image/icons/whatsapp_icon.webp" alt="whatsapp icon">
                 <h5>Iniciar Conversa</h5>
