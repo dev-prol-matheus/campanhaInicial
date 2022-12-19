@@ -2,7 +2,17 @@ let GEO_SUCCESS, GEO_ERROR = true;
 let DATA, KEY_ACCESS_LOCATION, GLOBAL_KEY = '';
 const SESSION_REGION = document.getElementById('regions');
 
-axios.get('http://localhost/campanhaInicial/controllers/mock.php') //localhost: 127.0.0.1:3001 | hostoo: https://172.106.0.125:3001
+if(window.location.href == 'http://localhost/campanhaInicial/') {
+  url = {
+    urlGET: 'http://localhost/campanhaInicial/controllers/mock.php',
+  };
+} else {
+  url = {
+    urlGET: 'https://querobolsadeestudos.com.br/campanhaInicial/controllers/mock.php',
+  };
+}
+
+axios.get(url.urlGET) //localhost: 127.0.0.1:3001 | hostoo: https://172.106.0.125:3001
   .then(response => DATA = response.data) //
   .catch(error => {
     message: 'error',
