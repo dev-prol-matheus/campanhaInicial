@@ -1,1 +1,195 @@
-/*modal-animation*/ @keyframes show_modal_container { from { opacity: 0; } to { opacity: 1; } } @keyframes show_modal { from { opacity: 0; transform: translate3d(0, -100px, 0); } to { opacity: 1; transform: translate3d(0, 0, 0); } } /*modal-container*/ #modal-container { width: 100vw; height: 100vh; top: 0; left: 0; position: fixed; z-index: 10; display: flex; justify-content: center; align-items: center; background-color: #00000080; visibility: hidden; } #modal-container.show { visibility: visible; animation: show_modal_container .5s; } /*close-modal-btn*/ .modal .close-modal-btn { width: 40px; height: 40px; font-size: 1.5rem; top: 4px; right: 4px; margin: 0; padding: 0.3rem 0.5rem; display: flex; position: absolute; z-index: 10; justify-content: center; align-items: center; border: none; border-radius: 10px; cursor: pointer; color: #FEFEFE; background-color: transparent; } /*modal*/ .modal { width: 30%; height: 80%; min-width: 22rem; visibility: hidden; display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 0; padding: 0; position: relative; border: none; border-radius: 10px; background-color: #FFFF; box-shadow: 0 0 15px rgba(0, 0, 0, .2); } .modal.show { visibility: visible; animation: show_modal 0.5s; } /*img*/ .modal-content { display: flex; flex-direction: column; justify-content: center; /*align-items: start;*/ align-items: center; width: 100%; height: 25%; border: none; border-top-left-radius: 10px; border-top-right-radius: 10px; background-color: var(--quintenary-color); } .modal-content img { width: 12rem; object-fit: cover; margin-bottom: 1.7rem; } .modal-content .contact-name, .status { font-size: 1rem; color: #FEFEFE; } .modal-body .message { width: 80%; padding: 1rem 0.5rem; border: none; border-radius: 8px; font-size: 1rem; color: #606060; /*background-color: #FFFFFF;*/ background-color: #FFFFFF; } /*modal-body*/ .modal-body { display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; height: 75%; background-color: transparent; background-image: url('../image/background/whatsapp_background.webp'); } .modal-body .whatsapp-form { width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 0; padding: 1rem 0; } .modal-body .whatsapp-form .whatsapp-formInput { width: 80%; padding: 0.7rem; margin: 0.2rem 0; border: none; border-radius: 4px; background-color: #f4f4f4; box-shadow: 0 0 2px rgba(0, 0, 0, .100); } .modal-body .whatsapp-form .whatsapp-formInput::placeholder { color: #b8b8b8; } .modal-body .agreeBox { display: flex; flex-direction: row; justify-content: center; align-items: center; width: 80%; margin-bottom: 1rem; padding: 0.3rem 0; } .modal-body .agreeBox label { color: #606060; } /*sendWhatsappData*/ .sendWhatsappData { width: 22.25rem; height: 3.625rem; }
+/*modal-animation*/
+@keyframes show_modal_container {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes show_modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/*modal-container*/
+#modal-container {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000080;
+  visibility: hidden;
+}
+
+#modal-container.show {
+  visibility: visible;
+  animation: show_modal_container .5s;
+}
+
+/*close-modal-btn*/
+.modal .close-modal-btn {
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  top: 4px;
+  right: 4px;
+  margin: 0;
+  padding: 0.3rem 0.5rem;
+  display: flex;
+  position: absolute;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #FEFEFE;
+  background-color: transparent;
+}
+
+/*modal*/
+.modal {
+  width: 30%;
+  height: 80%;
+  min-width: 22rem;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  border: none;
+  border-radius: 10px;
+  background-color: #FFFF;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+}
+
+.modal.show {
+  visibility: visible;
+  animation: show_modal 0.5s;
+}
+
+/*img*/
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*align-items: start;*/
+  align-items: center;
+  width: 100%;
+  height: 25%;
+  border: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: var(--quintenary-color);
+}
+
+.modal-content img {
+  width: 12rem;
+  object-fit: cover;
+  margin-bottom: 1.7rem;
+}
+
+.modal-content .contact-name,
+.status {
+  font-size: 1rem;
+  color: #FEFEFE;
+}
+
+.modal-body .message {
+  width: 80%;
+  padding: 1rem 0.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #606060;
+  /*background-color: #FFFFFF;*/
+  background-color: #FFFFFF;
+}
+
+/*modal-body*/
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 75%;
+  background-color: transparent;
+  background-image: url('../image/background/whatsapp_background.webp');
+}
+
+.modal-body .whatsapp-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.modal-body .whatsapp-form .whatsapp-formInput {
+  width: 80%;
+  padding: 0.7rem;
+  margin: 0.2rem 0;
+  border: 1px solid #c2c2c2;
+  border-radius: 4px;
+  background-color: #f4f4f4;
+  box-shadow: 0 0 2px rgba(0, 0, 0, .100);
+}
+
+.modal-body .whatsapp-form .whatsapp-formInput::placeholder {
+  color: #b8b8b8;
+}
+
+.modal .whatsapp-form .whatsapp-formInput.inputlocation {
+  border: none;
+  height: 0.3rem;
+}
+
+.modal-body .agreeBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 0.8rem;
+  padding: 0.3rem 0;
+}
+
+.modal-body .agreeBox label {
+  color: #606060;
+  font-size: 0.9rem;
+}
+
+.modal .response {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  color: red;
+  background-color: #FF000014;
+}
+
+/*sendWhatsappData*/
+.sendWhatsappData {
+  width: 22.25rem;
+  height: 3.625rem;
+}
