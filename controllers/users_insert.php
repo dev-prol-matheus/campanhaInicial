@@ -21,7 +21,7 @@
         $SQL_COMMAND = "INSERT INTO {$connection->getDB_TABLE()}(name, email, phone, location)
         VALUES ('$name','$email', '$phone', '$location')";
         $connection->getConn()->query($SQL_COMMAND);
-        echo 'sucess';
+        echo 'success';
       } else {
         echo 'error';
       }
