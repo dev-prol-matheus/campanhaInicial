@@ -67,7 +67,6 @@ function setPathSession(GEO_SUCCESS_PATH) {
   <h3><strong class="regions-strong">O Prol Educa tem as melhores</strong><br>escolas parceiras da região</h3>
   <article class="partners" id="partners">
   </article>
-  <button class="button_component" type="reset">Entre em contato para garantir a vaga do seu filho</button>
   `;
 
   if(DATA == undefined || DATA == null || DATA == '') {
