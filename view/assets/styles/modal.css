@@ -21,7 +21,7 @@
   }
 }
 
-@keyframes hidden_modal {
+@keyframes hidden_modal_container {
   from {
     opacity: 1;
   }
@@ -42,15 +42,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  visibility: hidden;
   background-color: #00000080;
 }
 
 #modal-container.hidden {
-  visibility: hidden;
+  animation: hidden_modal_container 3s;
 }
 
 #modal-container.show {
   visibility: visible;
+  animation: show_modal_container 1s;
 }
 
 /*close-modal-btn*/
@@ -93,7 +95,10 @@
 }
 
 .modal.show {
-  animation: show_modal 0.5s;
+  animation: show_modal 1s;
+}
+.modal.hidden {
+  display: none;
 }
 
 /*img*/
