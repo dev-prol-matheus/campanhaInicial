@@ -41,7 +41,7 @@ a{
 
 input[type="text"],
 input[type="email"],
-input[type="submit"] {
+input[type="button"] {
 
     width: 75%;
     padding: 8px;
@@ -68,7 +68,7 @@ input[type="submit"] {
     font-size: 0.9rem;
 }
 
-input[type="submit"]{
+#sendWhatsappData{
     width: 70%;
     background-color: #4ECB5C;
     color: #fff;

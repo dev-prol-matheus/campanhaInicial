@@ -35,13 +35,15 @@ button.addEventListener("click", () => {
 })
 
 function actionMessage(message, dataArray) {
+  console.log(message);
+  console.log(dataArray);
   switch(message) {
     case 'success':
       document.getElementById('response').textContent = ""; // Aguarde um momento... Iremos direcionar você a nosso whatsapp!
       dataArray.forEach((info) => {
         document.getElementById(`${info}`).value = '';
       })
-      window.location.href = "https://wa.me/5581996857745?text=Ol%C3%A1%20pessoal%20do%20Prol%20Educa!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20Bolsa%20de%20Estudo.";
+      // window.location.href = "https://wa.me/5581996857745?text=Ol%C3%A1%20pessoal%20do%20Prol%20Educa!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20Bolsa%20de%20Estudo.";
       break;
     case 'error':
       document.getElementById('response').textContent = "Verifique se você preencheu todos os campos!";
