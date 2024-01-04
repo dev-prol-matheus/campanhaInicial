@@ -1,1 +1,73 @@
-#opportunities { width: 100%; display: flex; flex-direction: column; align-items: center; background: var(--secondary-color); } #opportunities .title { width: 100%; height: 4.75rem; align-items: center; justify-content: center; margin-top: 2rem; } #opportunities .title h3 { text-align: center; font-size: 2rem; color: #FEFEFE; } #opportunities .title strong { font-size: 3rem; } #opportunities .area-itens { width: 70%; margin: 4rem  0 2rem 0; display: flex; align-items: center; justify-content: center; flex-direction: row; flex-wrap: wrap; } #opportunities .area-itens .wrapper-item { width: 17rem; height: 16rem; margin: 0.8rem; display: flex; flex-direction: column; justify-content: center; align-items: center; } #opportunities .area-itens .wrapper-item .wrapper-icon { width: 18rem; display: flex; justify-content: center; align-items: center; } #opportunities .area-itens .wrapper-item .wrapper-icon img { width: 9.375rem; height: 9.375rem; object-fit: cover; color: #FAFAFA; } #opportunities .area-itens .wrapper-item .wrapper-icon i { font-size: 9rem; color: #FEFEFE; margin-bottom: 1rem; } #opportunities .area-itens figcaption { color: #FAFAFA; max-width: 15rem; font-size: 1.3rem; text-align: center; font-family: var(--nexa-book); }
+#opportunities {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--secondary-color);
+}
+
+#opportunities .title {
+    width: 100%;
+    height: 4.75rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#opportunities .title h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: #FEFEFE;
+}
+
+#opportunities .title strong {
+    font-size: 3rem;
+}
+
+#opportunities .area-itens {
+    width: 70%;
+    margin: 4rem 0 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#opportunities .area-itens .wrapper-item {
+    width: 17rem;
+    height: 16rem;
+    margin: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#opportunities .area-itens .wrapper-item .wrapper-icon {
+    width: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#opportunities .area-itens .wrapper-item .wrapper-icon img {
+    width: 9.375rem;
+    height: 9.375rem;
+    object-fit: cover;
+    color: #FAFAFA;
+}
+
+#opportunities .area-itens .wrapper-item .wrapper-icon i {
+    font-size: 9rem;
+    color: #FEFEFE;
+    margin-bottom: 1rem;
+}
+
+#opportunities .area-itens figcaption {
+    color: #FAFAFA;
+    max-width: 15rem;
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: var(--nexa-book);
+}

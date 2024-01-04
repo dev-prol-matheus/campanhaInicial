@@ -1,1 +1,81 @@
-#question { width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0; padding: 0 0 2rem; background: var(--secondary-color); } #question h3 { font-size: 3rem; color: #FEFEFE; margin: 2.5rem 0 1rem 0; } #question .question { width: 50rem; display: flex; flex-direction: row; align-items: flex-start; justify-content: start; color: #FEFEFE; font-family: var(--secondary-font); margin: 1.2rem; } #question .question:nth-child(5) { margin-bottom: 4rem; } #question .question img { width: 3rem; height: 3rem; margin: 0 0.8rem 0 0.3rem; } #question .question h4 { font-size: 1.3rem; } #question .question p { font-size: 1.2rem; font-family: var(--nexa-light); } #question .question p .anchorP { color: #FEFEFE; font-weight: bolder; font-size: 1.3rem; } #question .question p .anchorP:hover { color: var(--quaternary-color); } #question .visitWebsite { width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; } #question .visitWebsiteButton { background-color: var(--primary-color); } #question .visitWebsiteButton a { font-size: 1.5rem; } #question .visitWebsiteButton:hover { font-size: 1.3rem; background-color: #b22a2a; } #question .visitWebsiteButton i { margin: 0 0.5rem 0; }
+#question {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0 0 2rem;
+    background: var(--secondary-color);
+}
+
+#question h3 {
+    font-size: 3rem;
+    color: #FEFEFE;
+    margin: 2.5rem 0 1rem 0;
+}
+
+#question .question {
+    width: 50rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: start;
+    color: #FEFEFE;
+    font-family: var(--secondary-font);
+    margin: 1.2rem;
+}
+
+#question .question:nth-child(5) {
+    margin-bottom: 4rem;
+}
+
+#question .question img {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 0.8rem 0 0.3rem;
+}
+
+#question .question h4 {
+    font-size: 1.3rem;
+}
+
+#question .question p {
+    font-size: 1.2rem;
+    font-family: var(--nexa-light);
+}
+
+#question .question p .anchorP {
+    color: #FEFEFE;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+#question .question p .anchorP:hover {
+    color: var(--quaternary-color);
+}
+
+#question .visitWebsite {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#question .visitWebsiteButton {
+    background-color: var(--primary-color);
+}
+
+#question .visitWebsiteButton a {
+    font-size: 1.5rem;
+}
+
+#question .visitWebsiteButton:hover {
+    font-size: 1.3rem;
+    background-color: #b22a2a;
+}
+
+#question .visitWebsiteButton i {
+    margin: 0 0.5rem 0;
+}

@@ -1,1 +1,107 @@
-#economic { width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1.8rem 0; } #economic h3 { font-size: 3rem; text-align: center; color: var(--secondary-color); margin: 2rem 0 1rem 0; } #economic p { color: var(--secondary-color); margin: 0.5rem; font-size: 1.7rem; max-width: 50rem; text-align: center; font-weight: bolder; } #economic strong { color: var(--primary-color); font-size: 1.7rem !important; font-weight: 500 !important; font-weight: bolder !important; } #economic p strong { text-shadow: 0 1px 3px rgba(0,0,0,.300); } #economic .wrapper-economic { display: flex; width: 80%; flex-direction: row; align-items: center; justify-content: center; margin-bottom: 3rem; } #economic p strong { font-size: 1.6rem; font-weight: bolder; } #economic .wrapper-economic .item-economic { display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 18px; height: 15.25rem; width: 21.875rem; background: var(--primary-color); margin: 2.5rem; position: relative; color: #FEFEFE; box-shadow: 0 0 15px rgba(0,0,0,.500); } #economic .wrapper-economic .item-economic .title-economic { position: absolute; top: 1rem; font-size: 1.6rem; } #economic .wrapper-economic .item-economic .text-economic { margin-top: 3rem; font-size: 1.6rem; } #economic .wrapper-economic .item-economic strong { color: var(--secondary-color); font-size: 1.6rem; } #economic .wrapper-economic .economic-description { width: 80%; height: 10rem; display: flex; flex-direction: column; align-items: center; border-radius: 18px; text-align: center; background: #FEFEFE; } #economic .wrapper-economic .economic-description img { width: 8rem; height: 1.88rem; margin: 0.3rem 0; } #economic .wrapper-economic .economic-description h4 { font-size: 1.6rem; color: var(--whatsapp); } #economic .wrapper-economic .economic-description h4 strong { font-size: 1.1rem; color: var(--secondary-color); }
+#economic {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.8rem 0;
+}
+
+#economic h3 {
+    font-size: 3rem;
+    text-align: center;
+    color: var(--secondary-color);
+    margin: 2rem 0 1rem 0;
+}
+
+#economic p {
+    color: var(--secondary-color);
+    margin: 0.5rem;
+    font-size: 1.7rem;
+    max-width: 50rem;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#economic strong {
+    color: var(--primary-color);
+    font-size: 1.7rem !important;
+    font-weight: 500 !important;
+    font-weight: bolder !important;
+}
+
+#economic p strong {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .300);
+}
+
+#economic .wrapper-economic {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+#economic p strong {
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+
+#economic .wrapper-economic .item-economic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    height: 15.25rem;
+    width: 21.875rem;
+    background: var(--primary-color);
+    margin: 2.5rem;
+    position: relative;
+    color: #FEFEFE;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .500);
+}
+
+#economic .wrapper-economic .item-economic .title-economic {
+    position: absolute;
+    top: 1rem;
+    font-size: 1.6rem;
+}
+
+#economic .wrapper-economic .item-economic .text-economic {
+    margin-top: 3rem;
+    font-size: 1.6rem;
+}
+
+#economic .wrapper-economic .item-economic strong {
+    color: var(--secondary-color);
+    font-size: 1.6rem;
+}
+
+#economic .wrapper-economic .economic-description {
+    width: 80%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 18px;
+    text-align: center;
+    background: #FEFEFE;
+}
+
+#economic .wrapper-economic .economic-description img {
+    width: 8rem;
+    height: 1.88rem;
+    margin: 0.3rem 0;
+}
+
+#economic .wrapper-economic .economic-description h4 {
+    font-size: 1.6rem;
+    color: var(--whatsapp);
+}
+
+#economic .wrapper-economic .economic-description h4 strong {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+}

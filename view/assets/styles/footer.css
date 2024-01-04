@@ -1,1 +1,23 @@
-#footer { height: 4.75rem; width: 100%; display: flex; flex-direction: row; align-items: center; justify-content: center; } #footer .footerImage { height: 3rem; } #footer .footerImage a img { height: 100%; width: 100%; } #footer .footerImage a img { width: 100%; height: 100%; object-fit: cover; }
+#footer {
+    height: 4.75rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer .footerImage {
+    height: 3rem;
+}
+
+#footer .footerImage a img {
+    height: 100%;
+    width: 100%;
+}
+
+#footer .footerImage a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
