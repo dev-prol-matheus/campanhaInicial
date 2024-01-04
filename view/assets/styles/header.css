@@ -1,1 +1,106 @@
-#header { width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; } #header .container-header { width: 70%; display: flex; flex-direction: row; align-items: center; justify-content: center; position: relative; bottom: 0; margin-top: 4rem; } #header .container-header .text-header { text-align: center; width: 32.25rem; margin-right: 5rem; position: relative; top: -2.5rem; } #header .container-header .text-header h1 { font-size: 2.7rem; margin-bottom: 2rem; color: var(--secondary-color); } #header .container-header .text-header h1 strong { color: var(--primary-color); text-shadow: 1px 1px 1px var(--primary-color); font-size: 3rem; } #header .container-header .text-header p strong { color: var(--primary-color); font-size: 1.25rem; position: relative; top: -0.55rem; } #header .container-header .text-header h1 .seven { font-size: 8rem; color: var(--primary-color); font-weight: bolder; text-shadow: 1px 1px 2px var(--primary-color); } #header .container-header .text-header p { font-size: 1.25rem; margin-top: 2rem; font-family: var(--nexa-book); } #header .container-header .text-header #whatsapp-brands { font-size: 1.3rem; } #header .container-header .wrapper-image { display: flex; flex-direction: row; align-items: center; justify-content: center; position: relative; width: 30rem; height: 30.0625rem; } #header .container-header .wrapper-image img { height: 110%; /*35rem*/ position: absolute; bottom: 0; } #header .container-header .wrapper-image .childream-1{ left: -4rem; } #header .container-header .wrapper-image .childream-2{ right: -6rem; } .item-img { background: var(--whatsapp); border-style: none; border-radius: 158px 158px 0 0; width: 30rem; /*30rem*/ height: 30.0625rem; /*30.0625rem*/ } button #whatsapp-img { width: 3.625rem; height: 3.625rem; position: absolute; left: -0px; top: -0px; }
+#header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#header .container-header {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+    margin-top: 4rem;
+}
+
+#header .container-header .text-header {
+    text-align: center;
+    width: 32.25rem;
+    margin-right: 5rem;
+    position: relative;
+    top: -2.5rem;
+}
+
+#header .container-header .text-header h1 {
+    font-size: 2.7rem;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+}
+
+#header .container-header .text-header h1 strong {
+    color: var(--primary-color);
+    text-shadow: 1px 1px 1px var(--primary-color);
+    font-size: 3rem;
+}
+
+#header .container-header .text-header p strong {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    position: relative;
+    top: -0.55rem;
+}
+
+#header .container-header .text-header h1 .seven {
+    font-size: 8rem;
+    color: var(--primary-color);
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px var(--primary-color);
+}
+
+#header .container-header .text-header p {
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    font-family: var(--nexa-book);
+}
+
+#header .container-header .text-header #whatsapp-brands {
+    font-size: 1.3rem;
+}
+
+#header .container-header .wrapper-image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 30rem;
+    height: 30.0625rem;
+}
+
+#header .container-header .wrapper-image img {
+    height: 110%;
+    /*35rem*/
+    position: absolute;
+    bottom: 0;
+}
+
+#header .container-header .wrapper-image .childream-1 {
+    left: -4rem;
+}
+
+#header .container-header .wrapper-image .childream-2 {
+    right: -6rem;
+}
+
+.item-img {
+    background: var(--whatsapp);
+    border-style: none;
+    border-radius: 158px 158px 0 0;
+    width: 30rem;
+    /*30rem*/
+    height: 30.0625rem;
+    /*30.0625rem*/
+}
+
+button #whatsapp-img {
+    width: 3.625rem;
+    height: 3.625rem;
+    position: absolute;
+    left: -0px;
+    top: -0px;
+}
