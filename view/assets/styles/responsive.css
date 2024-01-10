@@ -13,6 +13,30 @@
         font-size: 50%;
     }
 
+    #form-whatsapp, #span-whatsapp {
+        width: 80%;
+    }
+
+    #span-whatsapp, #form-whatsapp label {
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="button"] {
+
+        font-size: 14px;
+
+    }
+
+    input[type="text"]::placeholder,
+    input[type="email"]::placeholder,
+    input[type="button"]::placeholder {
+
+        font-size: 14px;
+
+    }
+
     /* AREA DO HEADER */
     #header .container-header {
         flex-direction: column;
@@ -61,6 +85,20 @@
         align-items: center;
         width: 37.25rem;
         height: 6.625rem;
+    }
+
+    .sendWhatsappData{
+        font-size: 14px;
+    }
+
+    .sendWhatsappData img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .form_whatsapp_link img {
+        width: 60px;
+        height: 60px;
     }
 
     button #whatsapp-img {
@@ -263,11 +301,24 @@
         font-size: 2rem;
         margin: 1.5rem 0;
     }
+
+    #feedback .feedbackBox {
+        padding: 2rem;
+    }
 }
 
 @media only screen and (max-width: 425px) {
     * {
         font-size: 40%;
+    }
+
+    button{
+        font-size: 1.5rem;
+    }
+
+    .form_whatsapp_link img {
+        width: 45px;
+        height: 45px;
     }
 
     /* header */
